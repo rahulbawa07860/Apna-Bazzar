@@ -1,0 +1,42 @@
+#container{
+    width: 25%;
+    margin: auto;
+    
+}
+#container p{
+    font-size: 14px;
+}
+#first-part{
+    line-height: 12px;
+}
+#second-part{
+    line-height: 30px;
+}
+#second-part>p{
+    line-height: 18px;
+}
+#tick-box{
+    background-color: #f4f4f4;
+    padding: 5px 10px;
+    margin-top: 20px;
+    
+}
+#tick-box>p{
+    line-height: 18px;
+    padding-left: 20px;
+}
+.input{
+    width: 98%;
+    height: 35px;
+}
+.button{
+    width: 98%;
+    height: 35px;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #757575;
+}

@@ -1,0 +1,385 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* navbar start */
+#black-navbar{
+    border: 0px solid red;
+    width:100%;
+    height:40px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:#000000;
+    color: white;
+
+}
+#black-navbar>div:nth-child(1){
+    display: flex;
+    margin:auto ;
+    font-family: "Brandon Text", Arial, sans-serif;
+    font-size:16px;
+    
+}
+
+#apply-now{
+color: white;
+border-bottom: 0px solid white;
+
+
+}
+#bonus{
+    font-weight: bold;
+    font-size:16px;
+}
+#flag{
+    display: flex;
+margin-right: 20px;
+font-size:16px;
+font-family: "Brandon Text", Arial, sans-serif;
+   
+   
+}
+#flag>img{
+    border-radius: 50%;
+}
+#navbar{
+    border:0px solid black;
+    width:100%;
+    margin: auto;
+    height:100px;
+    display: flex;
+   justify-content: space-around;
+    align-items: center;
+   
+}
+#logo{
+    width:50%;
+    height:100%;
+}
+#search{
+    border: 2px solid grey;
+    width:23%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#input{
+    border:none;
+}
+#search>div{
+    border:0px solid red;
+    padding: 10px;
+
+}
+#search>div:nth-child(2){
+    width:80%;
+
+}
+
+
+#pro{
+    border: 0px solid green;
+    width:95%;
+    height:150px;
+    margin: auto;
+}
+#next-navbar{
+    width:100%;
+    height:43px;
+    border: 0px solid blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#next-navbar>div:hover{
+text-decoration: underline;
+cursor: pointer;
+}
+#next-navbar p{
+    font-size: 16px;
+    font-family: "Brandon Text", Arial, sans-serif;
+    columns: #333333;
+}
+#navbar p{
+    
+    font-size: 16px;
+    font-family: "Brandon Text", Arial, sans-serif;
+    
+   
+    cursor: pointer;
+    
+    color: #393939;
+    text-decoration: none;
+    
+    
+}
+#next-navbar>div:nth-child(2){
+    color: #f93822;
+}
+
+
+/* navbar ended */
+#dot{
+    border:0px solid red;
+    display: flex;
+    width: 95%;
+    height:60px;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 30px;
+    
+}
+#dot>div{
+    border:0px solid black;
+    width:33%;
+    font-size: 16px;
+    font-family: "Brandon Text", Arial, sans-serif;
+    text-align: center;
+    line-height: 22px;
+   
+
+}
+#dot>div>img{
+    width:100%;
+}
+#dot p{
+    color: #000000;
+   
+}
+#dot>div>p{
+    color:#393939;
+    font-weight: bold;
+
+   
+}
+#dot>div>a>p{
+    font-size: 12px;
+    
+    
+}
+#banner{
+    width:95%;
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+    text-align: center;
+}
+#banner>img{
+    width:100%;
+}
+#over{
+    position: absolute;
+  bottom: 90px;
+  right: 100px;
+  color: #FFFFFF;
+  font-size: 13px;
+}
+#deals{
+    border:0px solid red;
+    width:95%;
+    height:450px;
+    margin: auto;
+    margin-top: 30px;
+}
+#deals1{
+    display: flex;
+    justify-content: space-between;
+}
+#deals1>div:nth-child(1){
+    font-size: 25px;
+    font-weight: bold;
+    color: #393939;
+}
+#deals2{
+    border:0px solid red;
+    width:33%;
+    height:40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#deals2>div:hover{
+    text-decoration: underline;
+cursor: pointer;
+text-decoration-thickness: 3px;
+}
+
+#deals3{
+    border:0px solid red;
+    width: 97%;
+    height:350px;
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 350px);
+    gap:20px;
+    line-height: 23px;
+    font-family: "Brandon Text", Arial, sans-serif;
+}
+#deals3>div{
+    border:0px solid blue;  
+}
+#deals3>div>img{
+    width:100%;
+    height:78%;
+}
+#deals3>div>p:nth-child(2){
+   color:#f93822;
+   font-size: 13px;
+   font-weight: bold;
+
+}
+#deals3>div>p:nth-child(4){
+    color:#f93822;
+    font-family: "Brandon Text", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+ }
+ #deals3>div>p:nth-child(3){
+    
+    font-family: "Brandon Text", Arial, sans-serif;
+    font-size: 13px;
+    
+ }
+ #deals3>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px ;
+ }
+#ribbon{
+    width:95%;
+    margin: auto;
+    margin-top: 10px;
+}
+#all{
+    padding: 10px;
+    background-color: white;
+    border:1px solid black
+}
+#happy{
+    border:0px solid red;
+    width:95%;
+    margin: auto;
+    height:auto;
+    margin-top: 20px;
+}
+#ribbon>img{
+width:100%;
+}
+#happy>img{
+    width:100%;
+    
+}
+#happy{
+    position: relative;
+    text-align: center;
+}
+#comment{
+    position: absolute;
+  bottom: 70px;
+  left:400px;
+  
+
+ 
+}
+#btn1{
+    position: absolute;
+    bottom: 30px;
+    left:350px;
+    padding: 6px;
+}
+#btn2{
+    position: absolute;
+    bottom: 30px;
+    left:450px;
+    padding: 6px;
+}
+#btn3{
+    position: absolute;
+    bottom: 30px;
+    right:300px;
+    padding: 6px;
+}
+#carousel{
+    border:0px solid red;
+  
+    width:95%;
+    height:300px;
+    margin: auto;
+margin-top: 30px;
+}
+#carousel>img{
+    width:100%;
+    height:300px;
+}
+#deals4{
+    border:0px solid red;
+    width:50%;
+    height:40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Brandon Text", Arial, sans-serif;
+    font-size: 13px;
+}
+#deals4>div{
+    font-family: "Brandon Text", Arial, sans-serif;
+font-size: 16px;
+}
+#deals4>div:hover{
+    text-decoration: underline;
+cursor: pointer;
+text-decoration-thickness: 3px;
+}
+
+#deals5{
+    border:1px solid red;
+    width: 97%;
+    height:350px;
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 350px);
+    gap:20px;
+    line-height: 23px;
+    font-family: "Brandon Text", Arial, sans-serif;
+}
+#deals5>div{
+    border:1px solid blue;  
+}
+#deals5>div>img{
+    width:100%;
+    height:78%;
+}
+#deals5>div>p:nth-child(2){
+   color:#f93822;
+   font-size: 13px;
+   font-weight: bold;
+
+}
+#deals5>div>p:nth-child(4){
+    color:#f93822;
+    font-family: "Brandon Text", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+ }
+ #deals5>div>p:nth-child(3){
+    
+    font-family: "Brandon Text", Arial, sans-serif;
+    font-size: 13px;
+    
+ }
+ #deals5>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px ;
+ }
+ #deals5>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px ;
+ }

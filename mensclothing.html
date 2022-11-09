@@ -8,21 +8,257 @@
     <link rel="stylesheet" href="./mensclothing.css">
 </head>
 <body>
+    <!-- Navabar code -->
+
     <div id="navbar"></div>
-   
+
+    <!-- Container code -->
+
+    <div id="container">
+
+        <!-- Top buttons -->
         <div id="btns_top">
-            <ol class="SJ5Ct" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-                <li class="i29XK" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                    <a itemprop="item" href="/" class="vcxd7 osvvW Of5q2"><span itemprop="name">Home</span><meta itemprop="position" content="0"></a>
+            <ol class="line_btn"  >
+                <li class="i29XK">
+                    <a href="Home.html"><button>Home</button></a>
+                    
                 </li>
-                <li class="i29XK" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                    <a itemprop="item" href="/browse/men" class="vcxd7 osvvW Of5q2"><span itemprop="name">Men</span><meta itemprop="position" content="1"></a>
-                </li>
-                <li class="i29XK" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><span itemprop="name">Clothing</span><meta itemprop="position" content="2">
+                <li class="i29XK" >
+                    <a href="Men.html"><button>Men</button></a>
+                <li class="i29XK" ><button>Clothing</button>
                 </li>
             </ol>
         </div>
+        <!-- mainData will be here -->
+        <div id="main_div">
+
+            <!-- Div-1 : Filter div -->
+            <div class="filter_div">
+                <nav aria-labelledby="page-navigation" class="nav_filt nav_doc">
+                    <h2 id="page-navigation" class="oeitd OfW5X">
+                        Page Navigation
+                    </h2>
+                    <div class="filtbtn_div" id="size-accordion">
+                        <h3 class="btn_name">
+                            <button aria-controls="size-panel" aria-expanded="false" id="size-heading" type="button">
+                                Size
+                                <svg width="11px" height="12px" focusable="false" class="nui-icon nui-icon-large-maximize " role="presentation">
+                                    <path class="nui-icon-small-maximize-0" d="M5.5 1v9M1 5.5h9"></path>
+                                </svg>
+                            </button>
+                        </h3>
+                        <div aria-labelledby="size-heading" class="zAOv5" id="size-panel" role="region" hidden="" style="max-height: 0px;">
+                        
+                        
+                        </div>
+                    </div>
+                    <div class="filtbtn_div" id="color-accordion">
+                        <h3 class="btn_name">
+                            <button aria-controls="color-panel" aria-expanded="false" id="color-heading" type="button">
+                                Color
+                                <svg width="11px" height="12px" focusable="false" class="nui-icon nui-icon-large-maximize " role="presentation">
+                                    <path class="nui-icon-small-maximize-0" d="M5.5 1v9M1 5.5h9"></path>
+                                </svg>
+                            </button>
+                        </h3>
+                        <div aria-labelledby="color-heading" class="zAOv5" id="color-panel" role="region" style="max-height: 0px;" hidden=""></div>
+                    </div>
+                    <div class="filtbtn_div" id="brand-accordion">
+                        <h3 class="btn_name">
+                            <button aria-controls="brand-panel" aria-expanded="false" id="brand-heading" type="button">
+                                Brand
+                                <svg width="11px" height="12px" focusable="false" class="nui-icon nui-icon-large-maximize " role="presentation">
+                                    <path class="nui-icon-small-maximize-0" d="M5.5 1v9M1 5.5h9"></path>
+                                </svg>
+                            </button>
+                        </h3>
+                        <div aria-labelledby="brand-heading" class="zAOv5" id="brand-panel" role="region" hidden="" style="max-height: 0px;"></div>
+                    </div>
+                    <div class="filtbtn_div" id="feature-accordion">
+                        <h3 class="btn_name">
+                            <button aria-controls="feature-panel" aria-expanded="false" id="feature-heading" type="button">
+                                Feature
+                                <svg width="11px" height="12px" focusable="false" class="nui-icon nui-icon-large-maximize " role="presentation">
+                                    <path class="nui-icon-small-maximize-0" d="M5.5 1v9M1 5.5h9"></path>
+                                </svg>
+                            </button>
+                        </h3>
+                        <div aria-labelledby="feature-heading" class="zAOv5" id="feature-panel" role="region" hidden="" style="max-height: 0px;"></div>
+                    </div>
+                    <div class="filtbtn_div" id="fit-accordion">
+                        <h3 class="btn_name">
+                            <button aria-controls="fit-panel" aria-expanded="false" id="fit-heading" type="button">
+                                Fit
+                                <svg width="11px" height="12px" focusable="false" class="nui-icon nui-icon-large-maximize " role="presentation">
+                                    <path class="nui-icon-small-maximize-0" d="M5.5 1v9M1 5.5h9"></path>
+                                </svg>
+                            </button>
+                        </h3>
+                        <div aria-labelledby="fit-heading" class="zAOv5" id="fit-panel" role="region" hidden="" style="max-height: 0px;"></div>
+                    </div>
+                    <div class="filtbtn_div" id="material-accordion">
+                        <h3 class="btn_name"><button aria-controls="material-panel" aria-expanded="false" id="material-heading" type="button">
+                        Material
+                        <svg width="11px" height="12px" focusable="false" class="nui-icon nui-icon-large-maximize " role="presentation">
+                            <path class="nui-icon-small-maximize-0" d="M5.5 1v9M1 5.5h9"></path>
+                        </svg>
+                            </button>
+                        </h3>
+                        <div aria-labelledby="material-heading" class="zAOv5" id="material-panel" role="region" hidden="" style="max-height: 0px;"></div>
+                    </div>
+                    <div class="filtbtn_div" id="neck-style-accordion">
+                        <h3 class="btn_name">
+                            <button aria-controls="neck-style-panel" aria-expanded="false" id="neck-style-heading" type="button">
+                                Neck Style
+                                <svg width="11px" height="12px" focusable="false" class="nui-icon nui-icon-large-maximize " role="presentation">
+                                    <path class="nui-icon-small-maximize-0" d="M5.5 1v9M1 5.5h9"></path>
+                                </svg>
+                            </button>
+                        </h3>
+                        <div aria-labelledby="neck-style-heading" class="zAOv5" id="neck-style-panel" role="region" hidden="" style="max-height: 0px;"></div>
+                    </div>
+                    <div class="filtbtn_div" id="occasion-accordion">
+                        <h3 class="btn_name">
+                            <button aria-controls="occasion-panel" aria-expanded="false" id="occasion-heading" type="button">
+                                Occasion
+                                <svg width="11px" height="12px" focusable="false" class="nui-icon nui-icon-large-maximize " role="presentation">
+                                    <path class="nui-icon-small-maximize-0" d="M5.5 1v9M1 5.5h9"></path>
+                                </svg>
+                            </button>
+                        </h3>
+                        <div aria-labelledby="occasion-heading" class="zAOv5" id="occasion-panel" role="region" hidden="" style="max-height: 0px;"></div>
+                    </div>
+                    <div class="filtbtn_div" id="price-accordion">
+                        <h3 class="btn_name">
+                            <button aria-controls="price-panel" aria-expanded="false" id="price-heading" type="button">
+                                Price
+                                <svg width="11px" height="12px" focusable="false" class="nui-icon nui-icon-large-maximize " role="presentation">
+                                    <path class="nui-icon-small-maximize-0" d="M5.5 1v9M1 5.5h9"></path>
+                                </svg>
+                            </button>
+                        </h3>
+                        <div aria-labelledby="price-heading" class="zAOv5" id="price-panel" role="region" hidden="" style="max-height: 0px;"></div>
+                    </div>
+                    <div class="filtbtn_div" id="sale-accordion">
+                        <h3 class="btn_name">
+                            <button aria-controls="sale-panel" aria-expanded="false" id="sale-heading" type="button">
+                                Sale
+                                <svg width="11px" height="12px" focusable="false" class="nui-icon nui-icon-large-maximize " role="presentation">
+                                    <path class="nui-icon-small-maximize-0" d="M5.5 1v9M1 5.5h9"></path>
+                                </svg>
+                            </button>
+                        </h3>
+                        <div aria-labelledby="sale-heading" class="zAOv5" id="sale-panel" role="region" hidden="" style="max-height: 0px;"></div>
+                    </div>
+                    <div class="filtbtn_div" id="sleeve-length-accordion">
+                        <h3 class="btn_name">
+                            <button aria-controls="sleeve-length-panel" aria-expanded="false" id="sleeve-length-heading" type="button">
+                                Sleeve Length
+                                <svg width="11px" height="12px" focusable="false" class="nui-icon nui-icon-large-maximize " role="presentation">
+                                    <path class="nui-icon-small-maximize-0" d="M5.5 1v9M1 5.5h9"></path>
+                                </svg>
+                            </button>
+                        </h3>
+                        <div aria-labelledby="sleeve-length-heading" class="zAOv5" id="sleeve-length-panel" role="region" hidden="" style="max-height: 0px;"></div>
+                    </div>
+                    <div class="filtbtn_div" id="sports-league-accordion">
+                        <h3 class="btn_name">
+                            <button aria-controls="sports-league-panel" aria-expanded="false" id="sports-league-heading" type="button">
+                                Sports League
+                                <svg width="11px" height="12px" focusable="false" class="nui-icon nui-icon-large-maximize " role="presentation">
+                                    <path class="nui-icon-small-maximize-0" d="M5.5 1v9M1 5.5h9">
+
+                                    </path>
+                                </svg>
+                            </button>
+                        </h3>
+                        <div aria-labelledby="sports-league-heading" class="zAOv5" id="sports-league-panel" role="region" hidden="" style="max-height: 0px;"></div>
+                    </div>
+                    <div class="filtbtn_div" id="sports-team-accordion">
+                        <h3 class="btn_name">
+                            <button aria-controls="sports-team-panel" aria-expanded="false" id="sports-team-heading" type="button">
+                                Sports Team
+                                <svg width="11px" height="12px" focusable="false" class="nui-icon nui-icon-large-maximize " role="presentation">
+                                    <path class="nui-icon-small-maximize-0" d="M5.5 1v9M1 5.5h9"></path>
+                                </svg>
+                            </button>
+                        </h3>
+                        <div aria-labelledby="sports-team-heading" class="zAOv5" id="sports-team-panel" role="region" hidden="" style="max-height: 0px;"></div>
+                    </div>
+                    <div class="filtbtn_div" id="style-accordion">
+                        <h3 class="btn_name">
+                            <button aria-controls="style-panel" aria-expanded="false" id="style-heading" type="button">
+                                Style
+                                <svg width="11px" height="12px" focusable="false" class="nui-icon nui-icon-large-maximize " role="presentation">
+                                    <path class="nui-icon-small-maximize-0" d="M5.5 1v9M1 5.5h9"></path>
+                                </svg>
+                            </button>
+                        </h3>
+                        <div aria-labelledby="style-heading" class="zAOv5" id="style-panel" role="region" hidden="" style="max-height: 0px;"></div>
+                    </div>
+                </nav>
+            </div>
+            <!-- append the data -->
+            
+            <div class="top_image">
+                <div class="first_div">
+                    <div class="first_div-first">
+                        <div class="first_div-second">
+                        <div class="first_div-third">
+                            <div class="first_div-fourth">
+                                <div>
+                                    <section class="section">
+                                        <div class="image_div">
+                                            <div class="">
+                                                <div class="image_para" style="padding-bottom: 31.2594%;">
+                                                    <img class="FLQqr" loading="eager" alt="A model in a down puffer, graphic T- shirt and cargo pants; a model in a plaid flannel shirt and black jeans; a model in a grey suit and crewneck sweater." src="https://n.nordstrommedia.com/id/40a541c1-b357-4c21-ac0d-d284459faea6.jpeg?h=417&amp;w=1334">
+                                                </div>
+                                            </div>
+                                            <div class="paragraph" style="left: 58.92%; top: 20.38%; width: 38.23%;">
+                                                <h4 class=" NJIVb qhMT8 JkRPk _NbrB t1yis sxEtG jRV6p">
+                                                <p><strong>Keep It Fresh</strong></p>
+                                                </h4>
+                                                <div class=" para_on_image">
+                                                    <p>Add some new pieces to your wardrobe each season. Want expert advice? Free style help is available anytime, in stores and online.</p>
+                                                </div>
+                                                <div class=" btnlinks_p">
+                                                    <ul class="LbaTm">
+                                                        <li class="img -btn">
+                                                            <a href=""><button id="but_img">Suits <span>Sepatares</span></button></a>
+                                                            
+                                                        </li>
+                                                        <li class="img -btn">
+                                                            <a href=""><button id="but_img">Shirts</button></a>
+                                                        </li>
+                                                        <li class="img-btn">
+                                                            <a href=""><button id="but_img">Pants</button></a>
+                                                        </li>
+                                                        <li class="img -btn">
+                                                            <a href=""><button id="but_img">Sweaters</button></a></li>
+                                                       <li class="img -btn">
+                                                        <a href=""><button id="but_img">Coats & Jackets</button></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+</div>
+                                </div>
+
+
+        </div>
+    </div>
+    
 </body>
 </html>
 <script src="mensclothing.js"></script>

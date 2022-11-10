@@ -120,10 +120,3 @@ form .btn button{
   letter-spacing: 1px;
   cursor: pointer;
 }
-form .signup-link{
-  text-align: center;
-}
-
-form .signup-link a:hover{
-  text-decoration: underline;
-}

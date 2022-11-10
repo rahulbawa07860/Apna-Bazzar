@@ -1,36 +1,71 @@
-// //Demo: https://www.codehim.com/demo/zoom-image-on-mouseover-using-javascript/
-// let zoomer = function (){
-//     document.querySelector('#img-zoomer-box')
-//       .addEventListener('mousemove', function(e) {
-  
-//       let original = document.querySelector('#img-1'),
-//           magnified = document.querySelector('#img-2'),
-//           style = magnified.style,
-//           x = e.pageX - this.offsetLeft,
-//           y = e.pageY - this.offsetTop,
-//           imgWidth = original.offsetWidth,
-//           imgHeight = original.offsetHeight,
-//           xperc = ((x/imgWidth) * 100),
-//           yperc = ((y/imgHeight) * 100);
-  
-//       //lets user scroll past right edge of image
-//       if(x > (.01 * imgWidth)) {
-//         xperc += (.15 * xperc);
-//       };
-  
-//       //lets user scroll past bottom edge of image
-//       if(y >= (.01 * imgHeight)) {
-//         yperc += (.15 * yperc);
-//       };
-  
-//       style.backgroundPositionX = (xperc - 9) + '%';
-//       style.backgroundPositionY = (yperc - 9) + '%';
-  
-//       style.left = (x - 180) + 'px';
-//       style.top = (y - 180) + 'px';
-  
-//     }, false);
-//   }();
 
 
 
+
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <!DOCTYPE html>
+// <html>
+// <head>
+// <meta name="viewport" content="width=device-width, initial-scale=1">
+// <style>
+// #more {display: none;}
+// </style>
+// </head>
+// <body>
+
+// <h2>Read More Read Less Button</h2>
+// <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+// <button onclick="myFunction()" id="myBtn">Read more</button>
+
+// <script>
+// function myFunction() {
+//   var dots = document.getElementById("dots");
+//   var moreText = document.getElementById("more");
+//   var btnText = document.getElementById("myBtn");
+
+//   if (dots.style.display === "none") {
+//     dots.style.display = "inline";
+//     btnText.innerHTML = "Read more"; 
+//     moreText.style.display = "none";
+//   } else {
+//     dots.style.display = "none";
+//     btnText.innerHTML = "Read less"; 
+//     moreText.style.display = "inline";
+//   }
+// }
+// </script>
+
+// </body>
+// </html>

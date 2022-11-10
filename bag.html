@@ -22,6 +22,10 @@
             border-radius: 30px; */
 
 
+ 
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
 #zoom_container{
   display: flex;
   margin: auto;
@@ -30,10 +34,22 @@
 
 #zoom_right{
   width: 30%;
-  height: 400px;
+  height: 500px;
   border: 4px solid blue;
+  text-align: center;
 }
 
+#zoom_right button{
+  background-color: black;
+  color: white;
+  padding: 10px 150px;
+}
+#size{
+  padding: 10px 150px;
+}
+#styles{
+  padding: 10px 115px;
+}
 #zoom_left{
     width:60%;
     display: grid;
@@ -53,41 +69,10 @@ height: 615px;
 border: 1px solid yellow;
 }
 
-
-        /* #img-zoomer-box {
-  max-width: 500px;
-  height: auto;
-  position: relative;
-  margin: 10px auto;
+#search_reviews{
+  padding: 15px 350px;
+  
 }
-
-#img-1 {
-  width: 100%;
-  height: auto;
-}
-
-#img-zoomer-box:hover, #img-zoomer-box:active {
-  cursor: zoom-in;
-  display: block;
-}
-
-#img-zoomer-box:hover #img-2, #img-zoomer-box:active #img-2 {
-  opacity: 1;
-}
-#img-2 {
-  width: 340px;
-  height: 340px;
-  background: url('../img/photo.avif') no-repeat #FFF;
-  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
-  pointer-events: none;
-  position: absolute;
-  opacity: 0;
-  border: 4px solid whitesmoke;
-  z-index: 99;
-  border-radius: 100%;
-  display: block;
-  transition: opacity .2s;
-} */
     </style>
 </head>
 <body>
@@ -139,11 +124,128 @@ border: 1px solid yellow;
       <h4>ZELLA</h4><br><br>
       <h2>INR 1,580.92 (69% off)</h2>
       <p>Refreshed with a slimmer fit and a trio of pockets, there versatile joggers keep your off-duty look easy and and upto date </p>
+      <h5>Fit:true to size</h5>
+      <select id="size">
+        <option value="size">size</option>
+        <option value="Small">Small</option>
+        <option value="Medium">Medium</option>
+        <option value="Large">Large</option>
+        <option value="X-large">X-large</option>
+      </select><br><br>
+      
+      <select id="styles">
+        <option value="Grey-wolf-Melange">Grey-wolf-Melange</option>
+        <option value="Black-wolf-Melange">Black-wolf-Melange</option>
+        <option value="Black">Black</option>
+      </select><br><br>
+      <button> &#10026;Add to Bag</button>
 
-      <button>Add to Bag</button>
+      
     </div>
 
-  </div>
+  </div><hr>
+<div>
+  <h3>SIZE INFO</h3>
+  <li>True to size</li>
+  <li>Waist sizing; XS=26-28", S=28-30", M=32-34", L=36-38", XL=40-42", XXL=44-46", 3XL=48-50".</li>
+  <li>Tall bottoms fit 2" longer in inseam and ½” longer in rise than Regular sizes</li>
+  <li>Mid rise.</li>
+  <li>Get the fit you want. Book an appointment with our onsite experts or stop by your nearest store.</li>
+
+  <h3>DETAILS & CARE</h3>
+  <p>Refreshed with a slimmer fit and a trio of pockets, these versatile joggers keep your off-duty look easy and up to date.</p>
+  <li>29 1/2" inseam; 11" leg opening; 10 1/2" front rise; 16 1/2" back rise (size Medium</li>
+  <li>Elastic/drawstring waist</li>
+  <li>Front slant pockets; back zip-welt pocket</li>
+  <li>90% polyester, 10% spandex</li>
+  <li>Machine wash, tumble dry</li>
+  <li>Imported</li>
+  <li>Men's Sportswear</li>
+  <li>Item #5781120</li>
+</div>
+
+<div>
+  <h3>GIFT OPTION</h3>
+  <p>Choose your gift options at Checkout. Some items may not be eligible for all gift options.</p>
+
+  <h4>Free pickup</h4>
+  <p>Nordstrom gift box (free)</p>
+  <p>Signature gift wrap ($5)</p>
+  <p>Fabric gift bag ($5)</p>
+
+  <h4>Delivery</h4>
+  <p>Email gift message (free)</p>
+  <p>Printed gift message (free)</p>
+  <p>Fabric gift bag ($5)</p>
+  <p>DIY Nordstrom gift box ($5)</p>
+
+  <a href="https://www.nordstrom.com/brands/zella--5227?origin=productBrandLink">ZELLA</a>
+  <p>Step into your training schedule and maximize the power of your mind, body and energy. Stay focused, go further, be invincible and achieve balance in Zella athletic wear, designed with ultimate comfort innovation and peak performance technology to enhance your workout. For men, women and girls with ambitious fitness goals and a commitment to wellness. Available exclusively at Nordstrom.</p>
+</div><hr>
+
+<div>
+  <h3>HAVE QUESTIONS?</h3>
+  <p>Connect with us to get free style advice, product recommendations or customer service help.</p>
+  <button>Chat Now</button><hr>
+</div>
+<div>
+  <h3>REVIEWS</h3>
+  <input id="search_reviews" type="search" placeholder="Search reviews">
+  <button>&#9906;</button>
+
+</div><br>
+
+
+<div>
+<select id="size">
+  <option value="size">Lowest Rated</option>
+  <option value="Small">Highest Rated</option>
+  <option value="Medium">Most recent</option>
+  <option value="Large">Featured</option>
+  <option value="X-large">Most helpful</option>
+</select>
+
+
+
+
+
+  <select id="size">
+    <option value="size">size</option>
+    <option value="Small">Small</option>
+    <option value="Medium">Medium</option>
+    <option value="Large">Large</option>
+    <option value="X-large">X-large</option>
+  </select>
+
+
+
+
+
+  <select id="size">
+    <option value="size">Black</option>
+    <option value="Small">Black-oxide-Melange</option>
+    <option value="Medium">Grey-wolf-Melange</option>
+    <option value="Large">Featured</option>
+    <option value="X-large">Most helpful</option>
+  </select>
+</div><hr>
+
+
+<div>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgXwemcM2eOMIJKdPP5o8-i-gBaMvIIsEg6Q&usqp=CAU" alt="">
+
+  <h4>Stylish and Cozy</h4>
+  <p>Gift for my husband. He is a 33-34 in pants, 6 feet tall, and a medium in these pants fit perfectly! They have a slimmer fit, so they are perfect for wearing out to run errands or walk the dog without looking sloppy. The material is smooth and soft to the eye and touch, expectations exceeded!</p>
+  <button onclick="myFunction()" id="myBtn">Read more</button>
+</div>
+
+
+
+
+
+
+
+ 
 </body>
 </html>
 <script src="./index.js"></script>

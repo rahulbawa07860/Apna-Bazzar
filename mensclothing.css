@@ -260,7 +260,11 @@ strong {
     display: inline-block;
     margin: 0 10px;
 }
-
+.jHG4O{
+    padding-left: 10px;
+    font-size: 20px;
+    color: #737373;
+}
 
 .jgDs9 a:not(.wUEFa) {
     background: none;
@@ -405,6 +409,7 @@ option {
     text-align: left;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding-left: 10px;
+    padding: 10px;
 }
 #brand_name{
     color: rgb(80, 76, 76)

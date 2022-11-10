@@ -12,10 +12,10 @@ data=[{
 {
     image:"https://n.nordstrommedia.com/id/sr3/f33eb0cd-f3aa-4953-b4ae-3aba35d2fae3.jpeg?h=365&w=240&dpr=2" ,
     name:"Nike"  ,
-    description:"Dry 6-Packs Every Plus Cushion Crew TRaining Socks",
+    description:"Dry 6-Packs Every Plus Cushion Crew Training Socks",
     INR: "INR 1,891.93",
     off: "(0%off)",
-    strikeprice: null ,
+    strikeprice: "INR 6000.69" ,
     rating:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNi46qN56UzUWRidUVf3g6vXp9pOscW5_mjw&usqp=CAU",
     ratingNumber:"Customers-Rated-"+55,
     id:2
@@ -45,10 +45,10 @@ data=[{
 {
     image:"https://n.nordstrommedia.com/id/sr3/73a00824-a05f-40d3-87ca-8e9effde08ab.jpeg?h=365&w=240&dpr=2" ,
     name:"Nordstrom"  ,
-    description:"Half Zip Cotton & Cashmere PUllover sweater(Regular & Tall",
+    description:"Half Zip Cotton & Cashmere Pullover sweater(Regular & Tall)",
     INR: "INR 5,116.82",
     off:  "(20%off)",
-    strikeprice:null  ,
+    strikeprice:"INR 1000.10"  ,
     rating:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNi46qN56UzUWRidUVf3g6vXp9pOscW5_mjw&usqp=CAU",
     ratingNumber:"Customers-Rated-"+156 ,
     id:5

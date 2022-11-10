@@ -36,7 +36,15 @@
     background-color: black;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 .button:hover{
+    background-color: #757575;
+}
+#tap{
+    margin-top: 50px;
+    
+}
+#tap:hover{
     background-color: #757575;
 }

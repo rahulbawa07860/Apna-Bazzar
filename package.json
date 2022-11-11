@@ -1,0 +1,20 @@
+{
+  "name": "-clammy-move-5899",
+  "version": "1.0.0",
+  "description": "",
+  "main": "admin_add_product.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahulbawa07860/-clammy-move-5899.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahulbawa07860/-clammy-move-5899/issues"
+  },
+  "homepage": "https://github.com/rahulbawa07860/-clammy-move-5899#readme"
+}

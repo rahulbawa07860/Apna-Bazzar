@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "id": "1667755893510Shoe 2",
+      "name": "Shoe 2",
+      "price": "4000",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "discount": "45",
+      "strikeprice": "1800",
+      "image": "https://n.nordstrommedia.com/id/sr3/6b81c0a9-1e0f-4f1a-9751-55e5cea60255.jpeg?h=365&w=240&dpr=2"
+    },
+    {
+      "name": "Rahul bawa",
+      "price": "1234",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "discount": "34",
+      "strikeprice": "346",
+      "image": "https://n.nordstrommedia.com/id/sr3/20fcb003-e9c1-4a7e-b188-8491796aa4e8.jpeg?h=365&w=240&dpr=2",
+      "id": "YqR3N_F"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

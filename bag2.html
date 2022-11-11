@@ -4,99 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://kit.fontawesome.com/788cb34ce1.js" crossorigin="anonymous"></script> -->
     <title>Document</title>
-<link rel="stylesheet" href="./landing.css">
-<script src="https://kit.fontawesome.com/24c494a6b6.js"
-    crossorigin="anonymous"></script>
+    <style>
+
+/*       
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: repeat(5,50px);
+            gap: 20px;
+            border: 0px solid red;
+            width: 80%;
+            margin: auto;
+            margin-top: 100px;
+            background-color: #262c2c;
+            padding: 40px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 30px; */
+
+
+ 
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
+  font-size: smaller;
+}
+#zoom_container{
+  display: flex;
+  margin: auto;
+  gap: 50px;
+}
+
+#zoom_right{
+  width: 30%;
+  height: 500px;
+  border: 4px solid blue;
+  text-align: center;
+}
+
+#zoom_right button{
+  background-color: black;
+  color: white;
+  padding: 10px 150px;
+}
+#size{
+  padding: 10px 150px;
+}
+#styles{
+  padding: 10px 115px;
+}
+#zoom_left{
+    width:60%;
+    display: grid;
+    grid-template-rows: repeat(4,auto);
+    grid-template-columns: repeat(2,1fr);
+    border: 5px solid green;
+}
+
+#zoom_left div{
+  border: 1px solid red;
+  /* height: 400px; */
+}
+
+#zoom_left img{
+width: 350px;
+height: 615px;
+border: 1px solid yellow;
+}
+
+#search_reviews{
+  padding: 15px 350px;
+  
+}
+#red{
+color: red;
+}
+    </style>
 </head>
 <body>
-    <!-- navbar start -->
-    <div id="black-navbar">
-        <div><p id="bonus">Get a $60 Bonus Note! </p><span>Offer ends November 20. Restrictions apply.</span> <a href="">  <span id="apply-now">  Apply Now </span></a></div>
-
-
-<div id="flag">
-    <img src="https://n.nordstrommedia.com/alias/IN.gif">
-    <p> India</p>
-</div>
-    </div>
-    <div id="pro">
-        <div id="navbar">
-            <div>
-                <a href=""><img id="logo" src="https://i.ibb.co/ZNkf87y/logo.png" alt=""></a>
-                
-            </div>
-    
-    
-    <div id="search">
-      <div>  <i class="fa-solid fa-magnifying-glass"></i></div>
-        <div><input id="input" type="text" placeholder="search for product and brand"></div>
-    
-        
-    </div>
-    
-    <div class="dropdown">
-        <p > <span>Sign In</span><i class="fa-solid fa-angle-down"></i></p>
-        <div class="dropdown-content">
-           <div id="account">Sign In | Create Account</div>
-           <ul><i class="fa-sharp fa-solid fa-basket-shopping"></i>    Purchases</ul>
-           <ul><i class="fa-solid fa-heart"></i>  Wish List</ul>
-           <ul><i class="fa-sharp fa-solid fa-location-dot"></i> Shipping Addresses</ul>
-           <ul><i class="fa-regular fa-credit-card"></i> Payment Methods</ul>
-           <ul><i class="fa-solid fa-clipboard-list"></i>   Your Stylists</ul>
-           <ul><i class="fa-regular fa-id-card"></i> Pay & Manage Card</ul>
-           <ul><i class="fa-sharp fa-solid fa-shop"></i> stores</ul>
-           <ul><i class="fa-regular fa-envelope"></i> email</ul>
-
-        </div>
-            
-
-    </div>
-    
-    <div class="dropdown">
-       <p>Admin <span><i class="fa-solid fa-angle-down"></i></span></p>
-       <div class="dropdown-content1">
-        <div id="account1">Sign In</div>
-        <ul><i class="fa-regular fa-message"></i> Message</ul>
-           <ul><i class="fa-solid fa-code-pull-request"></i> Request</ul>
-           <ul><i class="fa-regular fa-comment"></i>   Notification</ul>
-           <ul><i class="fa-regular fa-envelope"></i> Emails</ul>
-           
-
-       
-
-     </div>
-    </div>
-    <div>
-        <p> <span><i class="fa-solid fa-store"></i></span>Store</p>
-    </div>
-    <div>
-       <p> <i class="fa-solid fa-cart-shopping"></i><span>0</span></p>
-    </div>
-    
-    
-        </div>
-<hr>
-<div id="next-navbar">
-    <div><p><i class="fa-solid fa-gift"></i>Holiday Gifts</p></div>
-    <div><p>Holiday Deals</p></div>
-    <div id="next"><p>Women</p></div>
-    <div id="next1"><p>Men</p></div>
-    <div><p>Kids</p></div>
-    <div><p>Young Adult</p></div>
-    <div><p>Active Wear</p></div>
-    <div><p>Home</p></div>
-    <div><p>Beauty</p></div>
-    <div><p>Designer</p></div>
-    <div><p>The Thread</p></div>
-
-
-</div>
-
-    </div>
-    
-<!-- navbar ended -->
-
 <!--     
 <div id="img-zoomer-box">
     <img src="https://n.nordstrommedia.com/id/sr3/b23fa710-7212-44d7-b436-a4d20360357a.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" id="img-1" alt="Zoom Image on Mouseover"/>
@@ -109,11 +94,11 @@
     <div id="zoom_left">
         
       <div id="img-1"> 
-        <img src="https://n.nordstrommedia.com/id/sr3/b23fa710-7212-44d7-b436-a4d20360357a.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="Zoom Image on Mouseover"/>
+        <img src="https://n.nordstrommedia.com/id/sr3/d7e22c74-3cf7-4f36-9482-ab2ffe5349f4.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="Zoom Image on Mouseover"/>
         </div>
 
         <div id="img-1"> 
-            <img src="https://n.nordstrommedia.com/id/sr3/3c79b959-8b77-4059-aedb-d0fee721e62f.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="Zoom Image on Mouseover"/>
+            <img src="https://n.nordstrommedia.com/id/sr3/99f04624-6684-491b-847c-16a01da0f4da.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="Zoom Image on Mouseover"/>
         </div>
 
 
@@ -124,24 +109,24 @@
         </div>
 
         <div id="img-1"> 
-            <img src="https://n.nordstrommedia.com/id/sr3/f0ee6d8d-a731-4dad-8efa-111a2263811f.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="Zoom Image on Mouseover"/>
+            <img src="https://n.nordstrommedia.com/id/sr3/622b687f-cd13-4988-808e-220e278684f6.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="Zoom Image on Mouseover"/>
         </div>
 
         <div id="img-1"> 
-            <img src="https://n.nordstrommedia.com/id/sr3/fd571ac7-6f79-4a9d-bad7-8bfc4996beac.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="Zoom Image on Mouseover"/>
+            <img src="https://n.nordstrommedia.com/id/sr3/8865b222-e43b-47bd-95dc-ac56232f3e8f.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="Zoom Image on Mouseover"/>
         </div>
 
         <div id="img-1"> 
-            <img src="https://n.nordstrommedia.com/id/sr3/6d8f7812-1932-4854-951e-8ef65bae097d.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="Zoom Image on Mouseover"/>
+            <img src="https://n.nordstrommedia.com/id/sr3/4e51008c-1d65-4a45-b894-9b95fc34bbfe.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="Zoom Image on Mouseover"/>
         </div>
         
         <div id="img-1"> 
-            <img src="https://n.nordstrommedia.com/id/sr3/12703558-f40d-4ac8-ab8e-8fda6720d794.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="Zoom Image on Mouseover"/>
+            <img src="https://n.nordstrommedia.com/id/sr3/3e12fb53-4229-4e0f-a514-fe02ea831502.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="Zoom Image on Mouseover"/>
         </div>
 
     </div>
     <div id="zoom_right">
-      <h3 id="name">Pyrite Slim Fit Pocket Joggers</h3>
+      <h3>Pyrite Slim Fit Pocket Joggers</h3>
       <h4>ZELLA</h4><br><br>
       <h2 id="red">INR 1,580.92 (69% off)</h2>
       <p>Refreshed with a slimmer fit and a trio of pockets, there versatile joggers keep your off-duty look easy and and upto date </p>
@@ -159,7 +144,7 @@
         <option value="Black-wolf-Melange">Black-wolf-Melange</option>
         <option value="Black">Black</option>
       </select><br><br>
-      <button id="btn1">Add to Bag</button>
+      <button> &#10026;Add to Bag</button>
 
       
     </div>
@@ -277,7 +262,7 @@
   <p>Waist sizing was fine but if your husband is tall, these are not for you. At 6' 2" these were much too short and weirdly tightened mid-calf on him (ordered size medium, wears pant size 33/33). I am not sure why pants like these are not offered in various lengths/heights.
   <span id="dots2">...</span><span id="more2">so they are perfect for wearing out to run errands or walk the dog without looking sloppy. The material is smooth and soft to the eye and touch, expectations exceeded!</span></p>
   <button onclick="myFunction2()" id="myBtn2">Read more</button>
-  <p>&#128077; 12: found this helpful</p>
+  <p>&#128077; 18: found this helpful</p>
 </div>
 
 
@@ -291,12 +276,12 @@
   <p>My husband said he didn't need these when I got them. I told him he'd like them better for running. He tried them. I just ordered him two more pairs. He says they are super comfortable.
   <span id="dots3">...</span><span id="more3">so they are perfect for wearing out to run errands or walk the dog without looking sloppy. The material is smooth and soft to the eye and touch, expectations exceeded!</span></p>
   <button onclick="myFunction3()" id="myBtn3">Read more</button>
-  <p>&#128077; 18: found this helpful</p>
+  <p>&#128077; 38: found this helpful</p>
 </div>
 
 
  
 </body>
 </html>
-<script src="./bag.js"></script>
+<script src="./bag2.js"></script>
 

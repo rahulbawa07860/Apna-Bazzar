@@ -12,6 +12,9 @@
     align-items: center;
     background-color:#000000;
     color: white;
+/*     
+    margin: 0px;
+    padding: 0px; */
 
 }
 #black-navbar>div:nth-child(1){

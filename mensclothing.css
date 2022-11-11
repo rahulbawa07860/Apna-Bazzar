@@ -532,9 +532,9 @@ option {
 #price_tag{
     color: #df2247;
 }
-#rating{
+/* #rating{
     
-}
+} */
 #strike{
     text-decoration: line-through;
 }
@@ -751,6 +751,55 @@ border:0px solid red;
     padding: 5px; 
     cursor: pointer;
 
+}
+/* dinamicapi */
+/* .im_size{
+    width: 100px;
+} */
+.rating_size{
+    width: 100px;
+}
+#dynamic_api_div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    padding-left: 30px;
+}
+#dynamic_api_div>div>img{
+    width: 60%;
+}
+#dynamic_api_div>div{
+    text-align: left;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding-left: 10px;
+    padding: 10px;
+}
+#d_brand_name{
+    color: rgb(80, 76, 76)
+}
+#d_price_tag{
+    color: #df2247;
+}
+/* #rating{
+    
+} */
+#d_strike{
+    text-decoration: line-through;
+}
+#d_button_cart{
+    height:40px;
+    margin-left: 70px;
+    background: transparent;
+    border: 0.5px solid;
+    width: 80px;
+}
+#d_button_cart:hover{
+    cursor: pointer;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
 }
 
 @media  all and (min-width: 1024px){

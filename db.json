@@ -1,0 +1,23 @@
+{
+  "posts": [
+    {
+      "name": "Rahul bawa",
+      "price": "11",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+      "discount": "45",
+      "strikeprice": "2355",
+      "image": "https://images.pexels.com/photos/19090/pexels-photo.jpg?cs=srgb&dl=pexels-web-donut-19090.jpg&fm=jpg",
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

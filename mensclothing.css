@@ -534,11 +534,17 @@ option {
     color: #df2247;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 /* #rating{
     
 } */
 >>>>>>> cced1bfd359ef0776655683487dd20804aa9b9ae
+=======
+/* #rating{
+    
+} */
+>>>>>>> main
 #strike{
     text-decoration: line-through;
 }

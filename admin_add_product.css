@@ -1,101 +1,8 @@
 *{
-    font-family: "Brandon Text", Arial, sans-serif;
-}
-*{
     margin: 0px;
     padding: 0px;
 }
-
-#new{
-    display: flex;
-    justify-content: right;
-}
-#new>p{
-    padding-top: 10px;
-    margin-right: 10px;
-}
-.button1{
-    width: 10%;
-    height: 40px;
-    color: white;
-    background-color: black;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-}
-#container{
-    width: 25%;
-    margin: auto;
-    font-family: "Brandon Text", Arial, sans-serif;
-    
-}
-#container>h2{
-    color: #fe3b1f;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-#container p{
-    font-size: 14px;
-    font-family: "Brandon Text", Arial, sans-serif;
-    margin-top: 20px;
-}
-#first-part{
-    line-height: 12px;
-    font-family: "Brandon Text", Arial, sans-serif;
-}
-#second-part{
-    line-height: 30px;
-    font-family: "Brandon Text", Arial, sans-serif;
-}
-#second-part>p{
-    line-height: 18px;
-}
-#first-part>h2{
-    color: #fe3b1f;
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-#tick-box{
-    background-color: #f4f4f4;
-    padding: 5px 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: "Brandon Text", Arial, sans-serif;
-}
-#tick-box>p{
-    line-height: 18px;
-    padding-left: 20px;
-    font-family: "Brandon Text", Arial, sans-serif;
-}
-.input{
-    width: 98%;
-    height: 35px;
-    font-family: "Brandon Text", Arial, sans-serif;
-    margin-top: 6px;
-    margin-bottom: 6px;
-}
-.button{
-    width: 98%;
-    height: 35px;
-    color: white;
-    background-color: black;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    margin-top: 10px;
-}
-.button:hover{
-    background-color: #757575;
-}
-#tap{
-    margin-top: 50px;
-    font-family: "Brandon Text", Arial, sans-serif;
-}
-#tap:hover{
-    background-color: #757575;
-}
-
-/* navbar */
+/* navbar start */
 #black-navbar{
     border: 0px solid red;
     width:100%;
@@ -314,8 +221,8 @@ cursor: pointer;
 
 }
 
+/* navbar end */
 
-/* footer start */
 #footer{
     border:0px solid red;
     width:100%;
@@ -413,4 +320,31 @@ border:0px solid red;
     text-decoration-thickness: 1px;
 }
 
-/* footer end */
+
+#container{
+    border:0px solid red;
+    width:250px;
+    height:350px;
+    margin: auto;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#container>input{
+    height:30px;
+
+    width:80%;
+    margin-bottom: 10px;
+}
+#container>h2{
+    margin-bottom: 10px;
+    
+}
+
+#container>button{
+    width:80%;
+    height:30px;
+}

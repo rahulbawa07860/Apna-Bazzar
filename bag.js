@@ -1,7 +1,6 @@
 
 
 
-
 function myFunction() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
@@ -19,6 +18,65 @@ function myFunction() {
 }
 
 
+function myFunction2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+
+
+function myFunction3() {
+  var dots = document.getElementById("dots3");
+  var moreText = document.getElementById("more3");
+  var btnText = document.getElementById("myBtn3");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+
+
+
+
+let bag_btn = document.getElementById("btn1");
+bag_btn.addEventListener("click",bag_Func);
+
+function bag_Func(){
+  
+  let product_name = document.getElementById("name").innerText;
+  
+  let product_price = document.getElementById("red").innerText;
+  let size = document.getElementById("size").value;
+  let styles = document.getElementById("styles").value;
+
+  
+let product = {
+  product_name,
+  product_price,
+  size,
+  styles,
+}
+
+  localStorage.setItem("bag",JSON.stringify(product));
+}
 
 
 
@@ -35,37 +93,3 @@ function myFunction() {
 
 
 
-// <!DOCTYPE html>
-// <html>
-// <head>
-// <meta name="viewport" content="width=device-width, initial-scale=1">
-// <style>
-// #more {display: none;}
-// </style>
-// </head>
-// <body>
-
-// <h2>Read More Read Less Button</h2>
-// <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-// <button onclick="myFunction()" id="myBtn">Read more</button>
-
-// <script>
-// function myFunction() {
-//   var dots = document.getElementById("dots");
-//   var moreText = document.getElementById("more");
-//   var btnText = document.getElementById("myBtn");
-
-//   if (dots.style.display === "none") {
-//     dots.style.display = "inline";
-//     btnText.innerHTML = "Read more"; 
-//     moreText.style.display = "none";
-//   } else {
-//     dots.style.display = "none";
-//     btnText.innerHTML = "Read less"; 
-//     moreText.style.display = "inline";
-//   }
-// }
-// </script>
-
-// </body>
-// </html>

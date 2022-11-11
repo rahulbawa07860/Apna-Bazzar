@@ -98,7 +98,7 @@ const appendProduct = () => {
         btn.innerText="Quick View"
         btn.setAttribute('id','button_cart');
         btn.onclick=()=>{
-            buyProduct(i)
+            buyProduct()
         }
         
 
@@ -114,8 +114,8 @@ const appendProduct = () => {
 }
 appendProduct()
 
-const  buyProduct= (i) => {
-
+const  buyProduct= () => {
+window.location.href="bag.html"
     
 }
 let brand_btn=document.getElementById('brand-heading');
@@ -126,15 +126,17 @@ brand_btn.onclick=()=>{
  
     
 const   sortHtoL= () => {
-    let newData=[]
-    for(let i=0;i<data.length;i++){
-         newData.push(data[i].name)
-    }
-    console.log('newData :>> ', newData);
+    // let newData=[]
+    // for(let i=0;i<data.length;i++){
+    //      newData.push(data[i].name)
+    // }
+    // console.log('newData :>> ', newData);
+
+    let newData=data;
         newData.sort((a,b) => {
-            if (a>b)
+            if (a.name>b.name)
                 return 1;
-            if (a <b)
+            if (a.name <b.name)
                 return -1;
             return 0;
         });
@@ -151,10 +153,19 @@ price_btn.onclick=()=>{
 
     const priceHtoL = () => {
         let newData=data;
-        newData=newData.sort((a,b)=>a.INR-b.rating);
+        newData=newData.sort((a,b)=>a.INR-b.INR);
         appendProduct(newData)
     }
     //console.log('newData :>> ', newData);
 
-   
+    let price_btn1=document.getElementById('price-heading1')
+    price_btn1.onclick=()=>{
+        priceLtoH()
+    }
+    
+        const priceLtoH = () => {
+            let newData=data;
+            newData=newData.sort((a,b)=>b.INR-a.INR);
+            appendProduct(newData)
+        }
 

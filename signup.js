@@ -87,6 +87,7 @@ registerNew.onclick = () => {
 
     user.signUP(name,email,username,password,mobile,description)
     console.log(user)
+    // window.location.href="signin.html"
 
 }
 

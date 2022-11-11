@@ -2,7 +2,7 @@ data=[{
     image:"https://n.nordstrommedia.com/id/sr3/d7e22c74-3cf7-4f36-9482-ab2ffe5349f4.jpeg?h=365&w=240&dpr=2",
     name:"Zella",
     description:"Pyrite Slim  Fit Pocket Joggers",
-    INR:"INR 1547.08",
+    INR:15000.69,
     off:"(69%off)",
     strikeprice:5073.02,
     rating:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNi46qN56UzUWRidUVf3g6vXp9pOscW5_mjw&usqp=CAU",
@@ -13,7 +13,7 @@ data=[{
     image:"https://n.nordstrommedia.com/id/sr3/f33eb0cd-f3aa-4953-b4ae-3aba35d2fae3.jpeg?h=365&w=240&dpr=2" ,
     name:"Nike"  ,
     description:"Dry 6-Packs Every Plus Cushion Crew Training Socks",
-    INR: "INR 1,891.93",
+    INR: 1891.90,
     off: "(0%off)",
     strikeprice: "INR 6000.69" ,
     rating:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNi46qN56UzUWRidUVf3g6vXp9pOscW5_mjw&usqp=CAU",
@@ -21,21 +21,10 @@ data=[{
     id:2
 },
 {
-    image:"https://n.nordstrommedia.com/id/sr3/2d13aead-4889-43e6-a47e-f3c49f8ec9f2.jpeg?h=365&w=240&dpr=2" ,
-    name:"The North Face"  ,
-    description:"Mens TKA kataka Fleece Pullover",
-    INR: "INR 5,108.22",
-    off:  "(40%off)",
-    strikeprice:"INR 8513.69"  ,
-    rating:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNi46qN56UzUWRidUVf3g6vXp9pOscW5_mjw&usqp=CAU",
-    ratingNumber:"Customers-Rated-"+500 ,
-    id:3
-},
-{
     image:"https://n.nordstrommedia.com/id/sr3/4664a52d-25f1-443e-9c97-38183c9e0c46.jpeg?h=365&w=240&dpr=2" ,
-    name:"Zella"  ,
+    name:"Adidas"  ,
     description:"Seamless Performance T-Shirt",
-    INR: "INR 859.11-INR2,511.412",
+    INR: 900,
     off:  "(Up to 74%off)",
     strikeprice: "INR 3,353.88" ,
     rating:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNi46qN56UzUWRidUVf3g6vXp9pOscW5_mjw&usqp=CAU",
@@ -46,9 +35,9 @@ data=[{
     image:"https://n.nordstrommedia.com/id/sr3/73a00824-a05f-40d3-87ca-8e9effde08ab.jpeg?h=365&w=240&dpr=2" ,
     name:"Nordstrom"  ,
     description:"Half Zip Cotton & Cashmere Pullover sweater(Regular & Tall)",
-    INR: "INR 5,116.82",
+    INR: 8000,
     off:  "(20%off)",
-    strikeprice:"INR 1000.10"  ,
+    strikeprice:"INR 10000.10"  ,
     rating:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNi46qN56UzUWRidUVf3g6vXp9pOscW5_mjw&usqp=CAU",
     ratingNumber:"Customers-Rated-"+156 ,
     id:5
@@ -57,15 +46,27 @@ data=[{
     image:"https://n.nordstrommedia.com/id/sr3/d2e47e22-ca1c-44bd-95cc-184e76e191fd.jpeg?h=365&w=240&dpr=2" ,
     name:"Canada Goose"  ,
     description:"Macmillian Recycled Woll Blend Down Parka",
-    INR: "INR 10,046.36",
+    INR: 12000,
     off:  "(60%off)",
     strikeprice:"INR 33,353.88"  ,
     rating:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNi46qN56UzUWRidUVf3g6vXp9pOscW5_mjw&usqp=CAU",
    
     ratingNumber:"Customers-Rated-"+ 1000,
     id:6
-}
+},
+{
+    image:"https://n.nordstrommedia.com/id/sr3/2d13aead-4889-43e6-a47e-f3c49f8ec9f2.jpeg?h=365&w=240&dpr=2" ,
+    name:"The North Face"  ,
+    description:"Mens TKA kataka Fleece Pullover",
+    INR: 5018.99,
+    off:  "(40%off)",
+    strikeprice:"INR 8513.69"  ,
+    rating:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNi46qN56UzUWRidUVf3g6vXp9pOscW5_mjw&usqp=CAU",
+    ratingNumber:"Customers-Rated-"+500 ,
+    id:3
+},
 ];
+//console.log(data)
 
 const appendProduct = () => {
     let append_div=document.getElementById('append_div');
@@ -92,6 +93,7 @@ const appendProduct = () => {
         rating.setAttribute('id','rating')
         let ratingNumber=document.createElement('p')
         ratingNumber.innerText=el.ratingNumber;
+        ratingNumber.setAttribute('id','setAtrr')
         let btn=document.createElement("button")
         btn.innerText="Quick View"
         btn.setAttribute('id','button_cart');
@@ -116,3 +118,43 @@ const  buyProduct= (i) => {
 
     
 }
+let brand_btn=document.getElementById('brand-heading');
+brand_btn.onclick=()=>{
+    sortHtoL()
+}
+
+ 
+    
+const   sortHtoL= () => {
+    let newData=[]
+    for(let i=0;i<data.length;i++){
+         newData.push(data[i].name)
+    }
+    console.log('newData :>> ', newData);
+        newData.sort((a,b) => {
+            if (a>b)
+                return 1;
+            if (a <b)
+                return -1;
+            return 0;
+        });
+        appendProduct(newData)
+    
+    
+}
+
+
+let price_btn=document.getElementById('price-heading')
+price_btn.onclick=()=>{
+    priceHtoL()
+}
+
+    const priceHtoL = () => {
+        let newData=data;
+        newData=newData.sort((a,b)=>a.INR-b.rating);
+        appendProduct(newData)
+    }
+    //console.log('newData :>> ', newData);
+
+   
+

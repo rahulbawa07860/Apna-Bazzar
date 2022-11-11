@@ -25,13 +25,12 @@
 #apply-now{
 color: white;
 border-bottom: 0px solid white;
-
-
 }
 #bonus{
     font-weight: bold;
     font-size:16px;
 }
+
 #flag{
     display: flex;
 margin-right: 20px;

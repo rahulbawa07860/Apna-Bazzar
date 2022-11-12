@@ -1,49 +1,15 @@
 {
   "posts": [
-    {
-      "name": "Rhone",
-      "price": "1500",
-      "description": "jacket",
-      "discount": "50",
-      "strikeprice": "2000",
-      "image": "https://n.nordstrommedia.com/id/sr3/32e093b7-543b-42af-b8f9-8081764e53ae.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
-      "id": 3
-    },
-    {
-      "name": "navy",
-      "price": "3000",
-      "description": "jacket",
-      "discount": "20",
-      "strikeprice": "3600",
-      "image": "https://n.nordstrommedia.com/id/sr3/0e7a86ca-93f3-4d95-a0bc-bc2561f942c0.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
-      "id": 4
-    },
-    {
-      "name": "alley",
-      "price": "1000",
-      "description": "tshirt",
-      "discount": "50",
-      "strikeprice": "2000",
-      "image": "https://n.nordstrommedia.com/id/sr3/e99348bb-81f7-4b8f-8707-eee0c03a9ad1.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
-      "id": 5
-    },
+    
+
     {
       "name": "lee",
-      "price": "3000",
-      "description": "Sweatshirt",
+      "price": "5000",
+      "description": "Bomber Jacket",
       "discount": "10",
-      "strikeprice": "3300",
-      "image": "https://n.nordstrommedia.com/id/sr3/9c8fdc4e-5d86-46cf-821c-a7bf8e44b2a6.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
-      "id": 6
-    },
-    {
-      "name": "nike",
-      "price": "1500",
-      "description": "short",
-      "discount": "50",
-      "strikeprice": "3000",
-      "image": "https://n.nordstrommedia.com/id/sr3/54bfd9bd-f13b-4d4c-a09d-3ddb8499b54e.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
-      "id": 7
+      "strikeprice": "5500",
+      "image": "https://n.nordstrommedia.com/id/sr3/79ad1216-7abc-4719-8c75-3e31f44364bf.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+      "id": 8
     },
     {
       "name": "lee",

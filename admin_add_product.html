@@ -95,22 +95,39 @@
     </div>
     
 <!-- main start -->
-<div id="container">
+<div id="main_con">
+    <div class="container">
 
-    <h2>Add Product</h2>
-      
-     
-    <input type="text" placeholder="Product Name" id="name"></br>
-    <input type="number" placeholder="original Price" id="price"></br>
-    <input type="text" placeholder="Product Description" id="description"></br>
-    <input type="number" placeholder="discount " id="discount"></br>
-    <input type="number" placeholder="strikeprice"  id="strikeprice"></br>
-    <input type="text" placeholder="Image Url" id="image"></br>
-    <button id="add_product">Add Product</button>
-
-
-
+        <h2>Add Product</h2>
+          
+         
+        <input type="text" placeholder="Product Name" id="name"></br>
+        <input type="number" placeholder="original Price" id="price"></br>
+        <input type="text" placeholder="Product Description" id="description"></br>
+        <input type="number" placeholder="discount " id="discount"></br>
+        <input type="number" placeholder="strikeprice"  id="strikeprice"></br>
+        <input type="text" placeholder="Image Url" id="image"></br>
+        <button id="add_product">Add Product</button>
+    
+    
+    
+    </div>
+    <div id="mini-cont">
+        <div class="next_container">
+            <h3>Delete Product</h3>
+            <input type="text" id="delete_id" placeholder="Product Id">
+            <button id="delete_btn">Delete Product</button>
+        </div>
+        <div class="next_container" id="nd_con">
+            <h3>Update Price</h3>
+            <input type="text" id="update_id" placeholder="Product Id">
+            <input type="text" id="update_price" placeholder="Updated Price">
+            <button id="update_btn">Update Price</button>
+        </div>
+    </div>
+    
 </div>
+
 
 
 

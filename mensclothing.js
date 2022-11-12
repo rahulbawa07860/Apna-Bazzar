@@ -203,7 +203,10 @@ const append=(data)=>{
         rating.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNi46qN56UzUWRidUVf3g6vXp9pOscW5_mjw&usqp=CAU"
         rating.setAttribute("class","rating_size")
         discount=document.createElement('p');
-        discount.innerText=`${el.discount}%off`
+        discount.innerText=`(${el.discount}%off)`
+        let ratingNumber=document.createElement('p')
+        ratingNumber.innerText="Customers-Rated-1000"
+        ratingNumber.setAttribute('id','dsetAtrr')
         let btn=document.createElement("button")
         btn.innerText="Quick View"
         btn.setAttribute('id','d_button_cart');
@@ -211,7 +214,7 @@ const append=(data)=>{
             buyProduct()
         }
 
-        div.append(img,brand,about,price,strike_price,discount,rating,btn)
+        div.append(img,brand,about,price,strike_price,discount,rating,ratingNumber,btn)
 
         dynamic_div.append(div)
 

@@ -169,3 +169,78 @@ price_btn.onclick=()=>{
             appendProduct(newData)
         }
 
+const dynamic=async()=>{
+
+    let res= await fetch(`http://localhost:3000/posts`)
+
+    let data=await res.json()
+    append(data)
+}
+dynamic()
+
+
+
+const append=(data)=>{
+    let dynamic_div= document.getElementById("dynamic_api_div")
+
+    data.forEach((el)=>{
+        let div=document.createElement("div")
+        let img=document.createElement("img")
+        img.src=el.image
+        img.setAttribute("class","im_size")
+        let about=document.createElement('h4')
+        about.innerText=el.description;
+        let price=document.createElement('h3')
+        price.innerText=+el.price;
+        price.setAttribute('id','d_price_tag')
+        let strike_price=document.createElement('p');
+        strike_price.innerText=el.strikeprice;
+        strike_price.setAttribute('id','d_strike')
+        let brand=document.createElement('h3')
+        brand.innerText=el.name;
+        brand.setAttribute('id','d_brand_name')
+        rating=document.createElement('img');
+        rating.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNi46qN56UzUWRidUVf3g6vXp9pOscW5_mjw&usqp=CAU"
+        rating.setAttribute("class","rating_size")
+        discount=document.createElement('p');
+        discount.innerText=`(${el.discount}%off)`
+        let ratingNumber=document.createElement('p')
+        ratingNumber.innerText="Customers-Rated-1000"
+        ratingNumber.setAttribute('id','dsetAtrr')
+        let btn=document.createElement("button")
+        btn.innerText="Quick View"
+        btn.setAttribute('id','d_button_cart');
+        btn.onclick=()=>{
+            buyProduct()
+        }
+
+        div.append(img,brand,about,price,strike_price,discount,rating,ratingNumber,btn)
+
+        dynamic_div.append(div)
+
+    })
+}
+
+let signbtn=document.getElementById('account_div');
+signbtn.onclick=()=>{
+window.location.href="signin.html"
+};
+
+let womenbtn=document.getElementById('next');
+womenbtn.onclick=()=>{
+    window.location.href="women.html"
+};
+let homebtnlogo=document.getElementById('logo_img');
+homebtnlogo.onclick=()=>{
+    window.location.href="landing.html"
+}
+
+let admnbtn=document.getElementById('account1_div');
+admnbtn.onclick=()=>{
+    window.location.href="adminlogin.html"
+}
+
+let cartbtn=document.getElementById('cart_div')
+cartbtn.onclick=()=>{
+    window.location.href="checkout.html"
+}

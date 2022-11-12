@@ -87,6 +87,8 @@ registerNew.onclick = () => {
 
     user.signUP(name,email,username,password,mobile,description)
     console.log(user)
+    document.getElementById("succes_statement").textContent=`Hello ${name},Your Acoount is succesfully Created`
+    // window.location.href="signin.html"
 
 }
 

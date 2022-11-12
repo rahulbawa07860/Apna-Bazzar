@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://kit.fontawesome.com/788cb34ce1.js" crossorigin="anonymous"></script> -->
+    <title>Document</title>
+    <style>
+
+/*       
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: repeat(5,50px);
+            gap: 20px;
+            border: 0px solid red;
+            width: 80%;
+            margin: auto;
+            margin-top: 100px;
+            background-color: #262c2c;
+            padding: 40px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 30px; */
+
+
+ 
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
+  font-size: smaller;
+}
+#zoom_container{
+  display: flex;
+  margin: auto;
+  gap: 50px;
+}
+
+#zoom_right{
+  width: 30%;
+  height: 500px;
+  border: 4px solid blue;
+  text-align: center;
+}
+
+#zoom_right button{
+  background-color: black;
+  color: white;
+  padding: 10px 150px;
+}
+#size{
+  padding: 10px 150px;
+}
+#styles{
+  padding: 10px 115px;
+}
+#zoom_left{
+    width:60%;
+    display: grid;
+    grid-template-rows: repeat(4,auto);
+    grid-template-columns: repeat(2,1fr);
+    border: 5px solid green;
+}
+
+#zoom_left div{
+  border: 1px solid red;
+  /* height: 400px; */
+}
+
+#zoom_left img{
+width: 350px;
+height: 615px;
+border: 1px solid yellow;
+}
+
+#search_reviews{
+  padding: 15px 350px;
+  
+}
+#red{
+color: red;
+}
+    </style>
+</head>
+<body>
+<!--     
+<div id="img-zoomer-box">
+    <img src="https://n.nordstrommedia.com/id/sr3/b23fa710-7212-44d7-b436-a4d20360357a.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" id="img-1" alt="Zoom Image on Mouseover"/>
+    <div src="" id="img-2"></div>
+  </div>  -->
+
+  <div id="zoom_container">
+    
+    
+    <div id="zoom_left">
+        
+      <div id="img-1"> 
+        <img src="https://n.nordstrommedia.com/id/sr3/80ce4ad0-d904-42c0-9198-1578dd7ff6df.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="Zoom Image on Mouseover"/>
+        </div>
+
+        <div id="img-1"> 
+            <img src="https://n.nordstrommedia.com/id/sr3/4b218aa4-394a-4d9f-806a-3ede5a67a923.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="Zoom Image on Mouseover"/>
+        </div>
+
+
+
+
+        <div id="vido">
+        <iframe allowtransparency="true" title="Wistia video player" allowFullscreen frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" src="https://fast.wistia.net/embed/iframe/sg2ctpkdyn" width="400" height="615"></iframe>
+        </div>
+
+        <div id="img-1"> 
+            <img src="https://n.nordstrommedia.com/id/sr3/a83d471e-9996-46cd-8d87-4648d139e55b.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="Zoom Image on Mouseover"/>
+        </div>
+
+        <div id="img-1"> 
+            <img src="https://n.nordstrommedia.com/id/sr3/a8ef90b0-2354-49bb-9e68-c7ef32573c33.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="Zoom Image on Mouseover"/>
+        </div>
+
+        <div id="img-1"> 
+            <img src="https://n.nordstrommedia.com/id/sr3/4fb9cf11-74ff-403e-b2ef-5418cd1e80c9.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="Zoom Image on Mouseover"/>
+        </div>
+        
+        <div id="img-1"> 
+            <img src="https://n.nordstrommedia.com/id/sr3/2d6bc3bb-e4ce-4c2f-a548-359f50acbfe0.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196" alt="Zoom Image on Mouseover"/>
+        </div>
+
+    </div>
+    <div id="zoom_right">
+      <h3>Pyrite Slim Fit Pocket Joggers</h3>
+      <h4>ZELLA</h4><br><br>
+      <h2 id="red">INR 1,580.92 (69% off)</h2>
+      <p>Refreshed with a slimmer fit and a trio of pockets, there versatile joggers keep your off-duty look easy and and upto date </p>
+      <h5>Fit:true to size</h5>
+      <select id="size">
+        <option value="size">size</option>
+        <option value="Small">Small</option>
+        <option value="Medium">Medium</option>
+        <option value="Large">Large</option>
+        <option value="X-large">X-large</option>
+      </select><br><br>
+      
+      <select id="styles">
+        <option value="Grey-wolf-Melange">Grey-wolf-Melange</option>
+        <option value="Black-wolf-Melange">Black-wolf-Melange</option>
+        <option value="Black">Black</option>
+      </select><br><br>
+      <button> &#10026;Add to Bag</button>
+
+      
+    </div>
+
+  </div><hr>
+<div style="display:flex;gap: 40px;" >
+  <div>
+  <h3>SIZE INFO</h3>
+  <li>True to size</li>
+  <li>Waist sizing; XS=26-28", S=28-30", M=32-34", L=36-38", XL=40-42", XXL=44-46", 3XL=48-50".</li>
+  <li>Tall bottoms fit 2" longer in inseam and ½” longer in rise than Regular sizes</li>
+  <li>Mid rise.</li>
+  <li>Get the fit you want. Book an appointment with our onsite experts or stop by your nearest store.</li>
+  </div>
+
+  <div>
+  <h3>DETAILS & CARE</h3>
+  <p>Refreshed with a slimmer fit and a trio of pockets, these versatile joggers keep your off-duty look easy and up to date.</p>
+  <li>29 1/2" inseam; 11" leg opening; 10 1/2" front rise; 16 1/2" back rise (size Medium</li>
+  <li>Elastic/drawstring waist</li>
+  <li>Front slant pockets; back zip-welt pocket</li>
+  <li>90% polyester, 10% spandex</li>
+  <li>Machine wash, tumble dry</li>
+  <li>Imported</li>
+  <li>Men's Sportswear</li>
+  <li>Item #5781120</li>
+  </div>
+  
+</div>
+
+<div>
+  <h3>GIFT OPTION</h3>
+  <p>Choose your gift options at Checkout. Some items may not be eligible for all gift options.</p>
+
+  <h4>Free pickup</h4>
+  <p>Nordstrom gift box (free)</p>
+  <p>Signature gift wrap ($5)</p>
+  <p>Fabric gift bag ($5)</p>
+
+  <h4>Delivery</h4>
+  <p>Email gift message (free)</p>
+  <p>Printed gift message (free)</p>
+  <p>Fabric gift bag ($5)</p>
+  <p>DIY Nordstrom gift box ($5)</p>
+
+</div><hr>
+
+<div style="width: 60%;">
+  <a href="https://www.nordstrom.com/brands/zella--5227?origin=productBrandLink">ZELLA</a>
+  <p>Step into your training schedule and maximize the power of your mind, body and energy. Stay focused, go further, be invincible and achieve balance in Zella athletic wear, designed with ultimate comfort innovation and peak performance technology to enhance your workout. For men, women and girls with ambitious fitness goals and a commitment to wellness. Available exclusively at Nordstrom.</p>
+</div>
+
+<div>
+  <h3>HAVE QUESTIONS?</h3>
+  <p>Connect with us to get free style advice, product recommendations or customer service help.</p>
+  <button>Chat Now</button><hr>
+</div>
+<div>
+  <h3>REVIEWS</h3>
+  <input id="search_reviews" type="search" placeholder="Search reviews">
+  <button>&#9906;</button>
+
+</div><br>
+
+
+<div>
+<select id="size">
+  <option value="size">Lowest Rated</option>
+  <option value="Small">Highest Rated</option>
+  <option value="Medium">Most recent</option>
+  <option value="Large">Featured</option>
+  <option value="X-large">Most helpful</option>
+</select>
+
+
+
+
+
+  <select id="size">
+    <option value="size">size</option>
+    <option value="Small">Small</option>
+    <option value="Medium">Medium</option>
+    <option value="Large">Large</option>
+    <option value="X-large">X-large</option>
+  </select>
+
+
+
+
+
+  <select id="size">
+    <option value="size">Black</option>
+    <option value="Small">Black-oxide-Melange</option>
+    <option value="Medium">Grey-wolf-Melange</option>
+    <option value="Large">Featured</option>
+    <option value="X-large">Most helpful</option>
+  </select>
+</div><br><hr>
+
+
+<div style="width: 40%;">
+  <img style="width: 20%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgXwemcM2eOMIJKdPP5o8-i-gBaMvIIsEg6Q&usqp=CAU" alt="">
+
+  <h4>Stylish and Cozy</h4>
+  <p>Gift for my husband. He is a 33-34 in pants, 6 feet tall, and a medium in these pants fit perfectly! They have a slimmer fit,<span id="dots">...</span><span id="more">so they are perfect for wearing out to run errands or walk the dog without looking sloppy. The material is smooth and soft to the eye and touch, expectations exceeded!</span></p>
+  <button onclick="myFunction()" id="myBtn">Read more</button>
+  <p>&#128077; 20: found this helpful</p>
+</div>
+
+
+<div style="width: 40%;">
+  <img style="width: 20%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgXwemcM2eOMIJKdPP5o8-i-gBaMvIIsEg6Q&usqp=CAU" alt="">
+
+  <h4>Not for tall guys</h4>
+  <p>Waist sizing was fine but if your husband is tall, these are not for you. At 6' 2" these were much too short and weirdly tightened mid-calf on him (ordered size medium, wears pant size 33/33). I am not sure why pants like these are not offered in various lengths/heights.
+  <span id="dots2">...</span><span id="more2">so they are perfect for wearing out to run errands or walk the dog without looking sloppy. The material is smooth and soft to the eye and touch, expectations exceeded!</span></p>
+  <button onclick="myFunction2()" id="myBtn2">Read more</button>
+  <p>&#128077; 18: found this helpful</p>
+</div>
+
+
+
+
+
+<div style="width: 40%;">
+  <img style="width: 20%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgXwemcM2eOMIJKdPP5o8-i-gBaMvIIsEg6Q&usqp=CAU" alt="">
+
+  <h4>Husband Really Likes These</h4>
+  <p>My husband said he didn't need these when I got them. I told him he'd like them better for running. He tried them. I just ordered him two more pairs. He says they are super comfortable.
+  <span id="dots3">...</span><span id="more3">so they are perfect for wearing out to run errands or walk the dog without looking sloppy. The material is smooth and soft to the eye and touch, expectations exceeded!</span></p>
+  <button onclick="myFunction3()" id="myBtn3">Read more</button>
+  <p>&#128077; 32: found this helpful</p>
+</div>
+
+
+ 
+</body>
+</html>
+<script src="./bag3.js"></script>
+

@@ -1,31 +1,27 @@
 {
   "posts": [
+    
+
     {
-      "name": "Rahul bawa",
-      "price": "11",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
-      "discount": "45",
-      "strikeprice": "2355",
-      "image": "https://images.pexels.com/photos/19090/pexels-photo.jpg?cs=srgb&dl=pexels-web-donut-19090.jpg&fm=jpg",
-      "id": 1
+      "name": "lee",
+      "price": "5000",
+      "description": "Bomber Jacket",
+      "discount": "10",
+      "strikeprice": "5500",
+      "image": "https://n.nordstrommedia.com/id/sr3/79ad1216-7abc-4719-8c75-3e31f44364bf.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+      "id": 8
     },
     {
-      "name": "Rahul bawa",
-      "price": "11",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
-      "discount": "343",
-      "strikeprice": "346346",
-      "image": "https://images.pexels.com/photos/19090/pexels-photo.jpg?cs=srgb&dl=pexels-web-donut-19090.jpg&fm=jpg",
-      "id": 2
+      "name": "lee",
+      "price": "5000",
+      "description": "Bomber Jacket",
+      "discount": "10",
+      "strikeprice": "5500",
+      "image": "https://n.nordstrommedia.com/id/sr3/79ad1216-7abc-4719-8c75-3e31f44364bf.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+      "id": 8
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
+  "comments": [],
   "profile": {
     "name": "typicode"
   }

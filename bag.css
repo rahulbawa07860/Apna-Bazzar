@@ -983,3 +983,87 @@ border:0px solid red;
 }
 
 
+/*------my--own-css------ */
+
+
+
+  #zoom_container{
+    display: flex;
+    margin: auto;
+    gap: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-size: smaller;
+  }
+
+  
+#zoom_right{
+    width: 30%;
+    height: 500px;
+    border: 0px solid blue;
+    text-align: center;
+    /* align-items: center; */
+    margin-right: 25px;
+  }
+
+  
+#zoom_right button{
+    background-color: black;
+    color: white;
+    padding: 10px 60px;
+    text-align: center;
+    border-radius: 10px;
+    /* align-content: space-between; */
+  }
+
+
+  
+#size{
+    padding: 10px 150px;
+  }
+  #styles{
+    padding: 10px 115px;
+  }
+
+
+  #zoom_left{
+    /* width:60%; */
+    display: grid;
+    grid-template-rows: repeat(4,auto);
+    grid-template-columns: repeat(2,1fr);
+    border: 0px solid green;
+    margin-left: 15px;
+}
+
+
+#zoom_left img{
+    width: 350px;
+    height: 615px;
+    border: 0px solid yellow;
+    }
+
+    
+#search_reviews{
+    padding: 15px 350px;
+    
+  }
+
+
+  
+.red{
+    color: red;
+    }
+    
+    
+#bag_btn:hover{
+    background-color: rgb(104, 100, 100);
+    }
+
+    
+  #zoom_container_down{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-size: smaller;
+    margin-left: 20px;
+    margin-right: 20px;
+  }

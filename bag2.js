@@ -55,6 +55,35 @@ function myFunction() {
   
   
   
+
+  
+let bag_btn = document.getElementById("bag_btn");
+bag_btn.addEventListener("click",bag_Func);
+
+
+function bag_Func(){
+  
+  // let data = JSON.parse(localStorage.getItem("bag"))||[];
+
+  let product_name = document.getElementById("name").innerText;
+  
+  let product_price = document.getElementById("red").innerText;
+  let size = document.getElementById("size").value;
+  let styles = document.getElementById("styles").value;
+
+  
+let obj = {
+  product_name,
+  product_price,
+  size,
+  styles,
+}
+// data.push(obj);
+  localStorage.setItem("bag",JSON.stringify(obj));
+  window.location.href="./cart.html";
+}
+
+
   
   
   

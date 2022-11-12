@@ -217,3 +217,27 @@ const append=(data)=>{
 
     })
 }
+
+let signbtn=document.getElementById('account_div');
+signbtn.onclick=()=>{
+window.location.href="signin.html"
+};
+
+let womenbtn=document.getElementById('next');
+womenbtn.onclick=()=>{
+    window.location.href="women.html"
+};
+let homebtnlogo=document.getElementById('logo_img');
+homebtnlogo.onclick=()=>{
+    window.location.href="landing.html"
+}
+
+let admnbtn=document.getElementById('account1_div');
+admnbtn.onclick=()=>{
+    window.location.href="adminlogin.html"
+}
+
+let cartbtn=document.getElementById('cart_div')
+cartbtn.onclick=()=>{
+    window.location.href="checkout.html"
+}

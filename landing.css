@@ -223,6 +223,7 @@ text-decoration-thickness: 3px;
     gap:20px;
     line-height: 23px;
     font-family: "Brandon Text", Arial, sans-serif;
+    justify-content: center;
 }
 #deals3>div{
     border:0px solid blue;  

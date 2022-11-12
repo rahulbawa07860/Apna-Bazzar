@@ -767,7 +767,7 @@ border:0px solid red;
     width: 100px;
 } */
 .rating_size{
-    width: 100px;
+    width: 60%;
 }
 #dynamic_api_div{
     display: grid;
@@ -776,9 +776,12 @@ border:0px solid red;
     row-gap: 20px;
     column-gap: 20px;
     padding-left: 30px;
+    margin: auto;
 }
-#dynamic_api_div>div>img{
+.im_size{
     width: 60%;
+    padding-left: 50px;
+    
 }
 #dynamic_api_div>div{
     text-align: left;
@@ -811,7 +814,9 @@ border:0px solid red;
     color: white;
     font-weight: bold;
 }
-
+#dsetAtrr{
+    margin-top: -15px;
+}
 @media  all and (min-width: 1024px){
     
 }

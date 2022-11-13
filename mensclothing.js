@@ -69,6 +69,8 @@ data=[{
 //console.log(data)
 
 const appendProduct = () => {
+    let loader_div=document.getElementById("loader_div")
+    loader_div.style.display='none'
     let append_div=document.getElementById('append_div');
     append_div.innerHTML=null;
     data.forEach(function(el,i){
@@ -112,10 +114,54 @@ const appendProduct = () => {
 
     });
 }
-appendProduct()
+
+
+
+
+
+let getmeData=new Promise(function(resolve,reject){
+
+    setTimeout(function(){
+        let newData=data;
+        //console.log(newData)
+    
+        if(newData!=null){
+             resolve(newData)
+         }else{
+            reject('ERR:Servor could not get movies data') 
+         }
+     },3000);
+    });
+    //console.log('getmeData :', getmeData);
+    
+    //then=>resolve
+    //catch=>error
+    
+    getmeData.then(function(success){
+       //console.log('success : ', success);
+       //122
+        //107
+        //109
+        //119
+        //126
+        appendProduct(success)
+    })
+    .catch(function(error){
+         console.log('error:', error)
+     });
+
+
+
+
+
+
+
+
+
+
 
 const  buyProduct= () => {
-window.location.href="bag.html"
+window.location.href="bag2.html"
     
 }
 let brand_btn=document.getElementById('brand-heading');
@@ -242,5 +288,5 @@ admnbtn.onclick=()=>{
 
 let cartbtn=document.getElementById('cart_div')
 cartbtn.onclick=()=>{
-    window.location.href="checkout.html"
+    window.location.href=".html"
 }

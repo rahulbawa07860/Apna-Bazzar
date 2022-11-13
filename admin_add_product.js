@@ -1,6 +1,7 @@
 let btn=document.getElementById("add_product");
 btn.onclick =()=>{
     createPost();
+    
 }
 
 const createPost = async()=>{
@@ -33,12 +34,13 @@ let res=await fetch(`https://stark-tundra-16682.herokuapp.com/posts`, {
 });
 let data=await res.json();
 console.log('data', data);
-
+window.location.href="mensclothing.html"
 }
 
 let dele_btn=document.getElementById("delete_btn")
 dele_btn.onclick=()=>{
     deletePost()
+    
 }
 
 const deletePost =async () =>{
@@ -54,12 +56,14 @@ const deletePost =async () =>{
     })
     let data= await res.json()
     console.log(data)
+    window.location.href="mensclothing.html"
 
 }
 
 let update_btn=document.getElementById("update_btn")
 update_btn.onclick=()=>{
     updatePost()
+    
 }
 
 const updatePost = async() => {
@@ -80,4 +84,5 @@ const updatePost = async() => {
     })
     let data= await res.json()
     console.log(data)
+    window.location.href="mensclothing.html"
 }

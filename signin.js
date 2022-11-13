@@ -89,17 +89,23 @@ let user=new User();
 let log=document.getElementById("login")
 log.onclick = async() => {
 
-    const username= document.getElementById("login-username").value;
+    try{
+        const username= document.getElementById("login-username").value;
     const password= document.getElementById("login-password").value;
 
     let {token} = await user.login(username,password);
     
     getprofile(username,token)
+    }
+    catch(e){
+        console.log(e)
+    }
 }
 
 const getprofile = async (username,token) => {
 
-    let api_link = `https://masai-api-mocker.herokuapp.com/user/${username}`
+    try{
+        let api_link = `https://masai-api-mocker.herokuapp.com/user/${username}`
 
     let response= await fetch(api_link,{
         headers : {
@@ -110,4 +116,10 @@ const getprofile = async (username,token) => {
 
     let data = await response.json();
     alert(`welcome ${data.username}`)
+    window.location.href="./landing.html"
+    }
+    catch(e){
+        console.log(e)
+        alert(`wrong username`)
+    }
 }

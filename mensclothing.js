@@ -99,21 +99,17 @@ const appendProduct = () => {
         let btn=document.createElement("button")
         btn.innerText="Quick View"
         btn.setAttribute('id','button_cart');
-        btn.onclick=()=>{
-            buyProduct()
-        }
-        
-
-
-
-       
+        btn.addEventListener('click',function(){
+        buyProduct(el);
+        });
         div.append(img,brand,about,price,strike_price,off_price,rating,ratingNumber,btn);
         append_div.append(div)
+        console.log(el)
 
 
 
     });
-}
+};
 
 
 
@@ -144,18 +140,22 @@ let getmeData=new Promise(function(resolve,reject){
 
 
 
-
-
+    
 
      
-const  buyProduct= () => {
-   
-    // let data=JSON.parse(localStorage.getItem('Toptal_price'))||[];
-price_tag= document.getElementById('price_tag').innerText;
-// data.push(price_tag)
-localStorage.setItem('Toptal_price',JSON.stringify(price_tag));
-window.location.href="bag2.html"
+     
+const  buyProduct= (el) => {
+
+    //console.log(el.INR);
+   let data=JSON.parse(localStorage.getItem('Total_price'))||[];
+// price_tag= document.getElementById('price_tag')
+//console.log('price_tag :>> ', price_tag);
+ data.push(el.INR)
+localStorage.setItem('Total_price',JSON.stringify(data));
+
 }
+
+
 let brand_btn=document.getElementById('brand-heading');
 brand_btn.onclick=()=>{
     sortHtoL()
@@ -278,10 +278,4 @@ admnbtn.onclick=()=>{
     window.location.href="adminlogin.html"
 }
 
-let cartbtn=document.getElementById('d_button_cart')
-cartbtn.onclick=()=>{
-   
-    
-    window.location.href="bag2.html.html"
 
-}

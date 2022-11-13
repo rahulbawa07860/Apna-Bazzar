@@ -5,12 +5,7 @@ let data=total_price.reduce(
     },0)
     
 let total_div=document.getElementById('total_span');
-
-total_div.innerText=data;
-total_div.style.color="green"
-
 total_div.innerText=data
-
 
 let orderbtn=document.getElementById('btn_cont');
 orderbtn.onclick=()=>{
@@ -18,7 +13,7 @@ orderbtn.onclick=()=>{
 }
 chekbtn=document.getElementById('btn_check')
 chekbtn.onclick=()=>{
-
+    getFormData(event)
     window.location.href="payment.html"
 }
 
@@ -60,13 +55,6 @@ document.getElementById("bag_count").innerText = total_count;
 
 
 
-    getFormData(event)
-    // window.location.href="payment.html"
-}
-
-let total_count = JSON.parse(localStorage.getItem("count")) || 0;
-document.getElementById("bag_count").innerText = total_count;
-
 let data96 = JSON.parse(localStorage.getItem('bag'));
 // console.log(data96);
 
@@ -83,41 +71,25 @@ data96.forEach(function (el){
     
     let div = document.createElement("div");
 
-    let p_name = document.createElement("h3");
-    p_name.innerText = el.product_name;
-    p_name.style.fontSize="18px";
-    // p_name.style.fontFamily=""
-    let p_styles = document.createElement("h3");
-    p_styles.innerText = el.styles
-    let p_size = document.createElement("h3");
-    p_size.innerText = el.size;
-    p_size.style.fontSize="16px"
-    p_size.style.color="#fe3b1f"
-    let p_price = document.createElement("h3");
-    p_price.innerText = el.product_price;
-    p_price.style.color="green";
-
     let p_name = document.createElement("h1");
     p_name.innerText = el.product_name;
+    p_name.style.fontSize="18px"
+
     let p_styles = document.createElement("h5");
     p_styles.innerText = el.styles
+    p_styles.style.fontSize="16px"
     let p_size = document.createElement("h5");
     p_size.innerText = el.size;
     let p_price = document.createElement("h3");
     p_price.innerText = el.product_price;
-
+    p_price.style.fontSize="18px";
+    p_price.style.color="green";
     
 
     div.append(p_name,p_styles,p_size,p_price);
     container_div.append(div);
 })
-
     
-
-}
-display(data96)
-
-
 
 
 
@@ -129,6 +101,7 @@ display(data96)
 
 
 display(data96);
+
 
 //---------------------------bag_product_info end--------------------------------------//
 
@@ -145,7 +118,7 @@ function getFormData(event) {
   let number=form.user_number.value;
   let delivery=document.getElementById('mode_a').value
 
-   let formObj={
+   let formObj1={
    name,
    lastname,
    add1,
@@ -159,9 +132,9 @@ function getFormData(event) {
 
   }
   //console.log(formObj)
-  let productData=JSON.parse(localStorage.getItem("formData"))||[];
-productData.push(formObj);
-localStorage.setItem("formData",JSON.stringify(productData))
+  
+
+localStorage.setItem("formData",JSON.stringify(formObj1))
 
 }
 

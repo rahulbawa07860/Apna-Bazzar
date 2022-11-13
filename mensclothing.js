@@ -194,7 +194,7 @@ const append=(data)=>{
         price.innerText=+el.price;
         price.setAttribute('id','d_price_tag')
         let strike_price=document.createElement('p');
-        strike_price.innerText=el.strikeprice;
+        strike_price.innerText=`INR ${el.strikeprice}`;
         strike_price.setAttribute('id','d_strike')
         let brand=document.createElement('h3')
         brand.innerText=el.name;

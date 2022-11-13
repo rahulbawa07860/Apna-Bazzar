@@ -1,23 +1,57 @@
 {
   "posts": [
-    
-
     {
-      "name": "lee",
-      "price": "5000",
-      "description": "Bomber Jacket",
-      "discount": "10",
-      "strikeprice": "5500",
-      "image": "https://n.nordstrommedia.com/id/sr3/79ad1216-7abc-4719-8c75-3e31f44364bf.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
-      "id": 8
+      "name": "NORDSTROM",
+      "price": "3000",
+      "description": "Half Zip Cotton & Cashmere Pullover Sweater",
+      "discount": "30",
+      "strikeprice": "3900",
+      "image": "https://n.nordstrommedia.com/id/sr3/73a00824-a05f-40d3-87ca-8e9effde08ab.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+      "id": 3
     },
     {
-      "name": "lee",
-      "price": "5000",
-      "description": "Bomber Jacket",
-      "discount": "10",
-      "strikeprice": "5500",
+      "name": "DEVIL-DOG DUNGAREES",
+      "price": "2000",
+      "description": "Stretch Flannel Overshirt,Rugged yet supersoft",
+      "discount": "20",
+      "strikeprice": "2400",
+      "image": "https://n.nordstrommedia.com/id/sr3/81fb1ebd-5fca-4318-920e-40df7818ac52.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+      "id": 4
+    },
+    {
+      "name": "FEAR OF GOD ESSENTIALS",
+      "price": "1000",
+      "description": "  1 / 6  Men's Oversize Cotton Logo Tee,tonal logo popping dimensionally on the chest.",
+      "discount": "50",
+      "strikeprice": "2000",
+      "image": "https://n.nordstrommedia.com/id/sr3/ba8b5555-165d-4def-a47b-199a42f73493.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+      "id": 5
+    },
+    {
+      "name": "FEAR OF GOD ESSENTIALS",
+      "price": "2500",
+      "description": "Sporty raglan sleeves enhance the roomy, boxy fit of a hoodie,made with tonal logo details and the soft comfort of cotton-blend fleece.",
+      "discount": "50",
+      "strikeprice": "5000",
+      "image": "https://n.nordstrommedia.com/id/sr3/ef162ac6-e930-45f7-928b-d4826d0018cc.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+      "id": 6
+    },
+    {
+      "name": "THE NORTH FACE",
+      "price": "3000",
+      "description": "Men's Nuptse® 1996 Packable Quilted Down Jacket",
+      "discount": "30",
+      "strikeprice": "3900",
       "image": "https://n.nordstrommedia.com/id/sr3/79ad1216-7abc-4719-8c75-3e31f44364bf.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+      "id": 7
+    },
+    {
+      "name": "TREASURE & BOND",
+      "price": "2000",
+      "description": "Welcome cooler weather in this heathery shirt made from brushed cotton and finished with button-flap pockets.",
+      "discount": "10",
+      "strikeprice": "2200",
+      "image": "https://n.nordstrommedia.com/id/sr3/cc9c4821-0958-411a-8595-41099eb0a0f1.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
       "id": 8
     }
   ],

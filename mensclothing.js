@@ -4,7 +4,7 @@ data=[{
     description:"Pyrite Slim  Fit Pocket Joggers",
     INR:15000.69,
     off:"(69%off)",
-    strikeprice:5073.02,
+    strikeprice:1580.92,
     rating:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNi46qN56UzUWRidUVf3g6vXp9pOscW5_mjw&usqp=CAU",
     ratingNumber:"Customers-Rated-"+(155),
     id:1
@@ -99,21 +99,17 @@ const appendProduct = () => {
         let btn=document.createElement("button")
         btn.innerText="Quick View"
         btn.setAttribute('id','button_cart');
-        btn.onclick=()=>{
-            buyProduct()
-        }
-        
-
-
-
-       
+        btn.addEventListener('click',function(){
+        buyProduct(el);
+        });
         div.append(img,brand,about,price,strike_price,off_price,rating,ratingNumber,btn);
         append_div.append(div)
+        console.log(el)
 
 
 
     });
-}
+};
 
 
 
@@ -137,39 +133,23 @@ let getmeData=new Promise(function(resolve,reject){
     .catch(function(error){
          console.log('error:', error)
      });
-
-
-
-
-
-
-
-
-
-
      
-const  buyProduct= () => {
-   
-    // let data=JSON.parse(localStorage.getItem('Toptal_price'))||[];
-price_tag= document.getElementById('price_tag').innerText;
-// data.push(price_tag)
-localStorage.setItem('Toptal_price',JSON.stringify(price_tag));
-window.location.href="bag2.html"
-}
+     
+const  buyProduct= (el) => {
+   let data=JSON.parse(localStorage.getItem('Total_price'))||[];
+   let data1=JSON.parse(localStorage.getItem('product'))||[];
+data.push(el.INR)
+data1.push(el)
+localStorage.setItem('Total_price',JSON.stringify(data));
+localStorage.setItem("product", JSON.stringify(data1))
+window.location.href="bag.html"
+};
 let brand_btn=document.getElementById('brand-heading');
 brand_btn.onclick=()=>{
     sortHtoL()
 }
 
- 
-    
 const   sortHtoL= () => {
-    // let newData=[]
-    // for(let i=0;i<data.length;i++){
-    //      newData.push(data[i].name)
-    // }
-    // console.log('newData :>> ', newData);
-
     let newData=data;
         newData.sort((a,b) => {
             if (a.name>b.name)
@@ -194,7 +174,6 @@ price_btn.onclick=()=>{
         newData=newData.sort((a,b)=>a.INR-b.INR);
         appendProduct(newData)
     }
-    //console.log('newData :>> ', newData);
 
     let price_btn1=document.getElementById('price-heading1')
     price_btn1.onclick=()=>{
@@ -278,10 +257,4 @@ admnbtn.onclick=()=>{
     window.location.href="adminlogin.html"
 }
 
-let cartbtn=document.getElementById('d_button_cart')
-cartbtn.onclick=()=>{
-   
-    
-    window.location.href="bag2.html.html"
 
-}

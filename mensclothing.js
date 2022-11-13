@@ -123,8 +123,6 @@ let getmeData=new Promise(function(resolve,reject){
 
     setTimeout(function(){
         let newData=data;
-        //console.log(newData)
-    
         if(newData!=null){
              resolve(newData)
          }else{
@@ -132,18 +130,8 @@ let getmeData=new Promise(function(resolve,reject){
          }
      },3000);
     });
-    //console.log('getmeData :', getmeData);
-    
-    //then=>resolve
-    //catch=>error
-    
     getmeData.then(function(success){
-       //console.log('success : ', success);
-       //122
-        //107
-        //109
-        //119
-        //126
+       
         appendProduct(success)
     })
     .catch(function(error){
@@ -159,10 +147,14 @@ let getmeData=new Promise(function(resolve,reject){
 
 
 
-
+     
 const  buyProduct= () => {
+   
+    // let data=JSON.parse(localStorage.getItem('Toptal_price'))||[];
+price_tag= document.getElementById('price_tag').innerText;
+// data.push(price_tag)
+localStorage.setItem('Toptal_price',JSON.stringify(price_tag));
 window.location.href="bag2.html"
-    
 }
 let brand_btn=document.getElementById('brand-heading');
 brand_btn.onclick=()=>{
@@ -286,7 +278,10 @@ admnbtn.onclick=()=>{
     window.location.href="adminlogin.html"
 }
 
-let cartbtn=document.getElementById('cart_div')
+let cartbtn=document.getElementById('d_button_cart')
 cartbtn.onclick=()=>{
-    window.location.href=".html"
+   
+    
+    window.location.href="bag2.html.html"
+
 }

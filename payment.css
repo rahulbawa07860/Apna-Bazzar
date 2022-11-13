@@ -1,0 +1,1181 @@
+
+#payment_div_details{
+align-items: center;
+/* text-align: center; */
+margin: 20px 20px;
+border: 1px solid red;
+
+}
+
+
+.direct{
+    width:300px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    margin-top: 30px;
+}
+input[type="text"],
+select,
+textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+}
+input[type="number"],
+select,
+textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+}
+
+input[type="submit"]:hover {
+    background-color: #b83c29;
+    cursor: pointer;
+}
+input[type="submit"] {
+background-color: #fe3b1f;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 20px;
+cursor: pointer;
+width: 100%;
+font-size: 20px;
+margin-top: 10px;
+}
+#last{
+margin-top: 20px;
+text-align: center;
+margin-left: 120px;
+}
+
+#payment_div{
+    border:0px  solid red;
+}
+#cardimg{
+    border:0px solid black;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#cardimg>div:nth-child(1)>img{
+    width:30%;
+}
+#cardimg>div:nth-child(2)>img{
+  margin-top: 5px;
+}
+#payment_div{
+    display: flex;
+    justify-content: space-around;
+}
+#address{
+    margin-top: 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border:0px solid black;
+    width:300px;
+    height:200px;
+margin-left: 100px;
+padding:10px;
+
+
+}
+
+
+
+
+
+/* footer start */
+#footer{
+    border:0px solid red;
+    width:100%;
+    height:auto;
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    padding-left: 15px;
+    padding-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 10px;
+    padding-left: 15px;
+}
+#footer1{
+    border:0px solid red;
+    width:70%;
+    height:80%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 430px);
+    gap:10px;
+    height:390px;
+}
+#footer1>div{
+border: 0px solid blue;
+line-height: 35px;
+font-family: "Brandon Text", Arial, sans-serif;
+font-size: 16px;
+color: #393939;
+height: 390px;
+}
+
+#footer1>div>ul:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    text-decoration-thickness: 1px;
+}
+
+#footer1>div>ul:nth-child(1){
+    font-weight: 700;
+
+}
+#footer2{
+    border:0px solid red;
+    height:130px;
+    width:20%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2, 60px);
+}
+
+#design{
+    border:0px solid blue;
+    display: flex;
+    width:98%;
+    justify-content: space-between;
+
+}
+
+#footer2>div{
+    border: 0px solid green;
+    
+}
+
+#footer2>div>img{
+width: 100%;
+margin-top: 10px;
+border:0px solid red;
+}
+#footer2>div:nth-child(2){
+    display: flex;
+    gap:15px;
+    padding-left: 30px;
+}
+#last{
+    border:0px solid black;
+    height:12%;
+    width:68%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1, auto); */
+    font-size: 13px;
+    font-family: "Brandon Text", Arial, sans-serif; 
+    font-weight: 400;
+    color: #393939;
+    margin-bottom: 10px;
+    margin-top: 10px;
+   
+}
+#last>div:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    text-decoration-thickness: 1px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* navbar start */
+#black-navbar{
+    border: 0px solid red;
+    width:100%;
+    height:40px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:#000000;
+    color: white;
+/*     
+    margin: 0px;
+    padding: 0px; */
+
+}
+#black-navbar>div:nth-child(1){
+    display: flex;
+    margin:auto ;
+    font-family: "Brandon Text", Arial, sans-serif;
+    font-size:16px;
+    
+}
+
+#apply-now{
+color: white;
+border-bottom: 0px solid white;
+}
+#bonus{
+    font-weight: bold;
+    font-size:16px;
+}
+
+#flag{
+    display: flex;
+margin-right: 20px;
+font-size:16px;
+font-family: "Brandon Text", Arial, sans-serif;
+   
+   
+}
+#flag>img{
+    border-radius: 50%;
+}
+#navbar{
+    border:0px solid black;
+    width:100%;
+    margin: auto;
+    height:100px;
+    display: flex;
+   justify-content: space-around;
+    align-items: center;
+   
+}
+#logo{
+    width:50%;
+    height:100%;
+}
+#search{
+    border: 2px solid grey;
+    width:23%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#input{
+    border:none;
+}
+#search>div{
+    border:0px solid red;
+    padding: 10px;
+
+}
+#search>div:nth-child(2){
+    width:80%;
+
+}
+
+
+#pro{
+    border: 0px solid green;
+    width:95%;
+    height:150px;
+    margin: auto;
+}
+#next-navbar{
+    width:100%;
+    height:43px;
+    border: 0px solid blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#next-navbar>div:hover{
+text-decoration: underline;
+cursor: pointer;
+}
+#next-navbar p{
+    font-size: 16px;
+    font-family: "Brandon Text", Arial, sans-serif;
+    columns: #333333;
+}
+#navbar p{
+    
+    font-size: 16px;
+    font-family: "Brandon Text", Arial, sans-serif;
+    
+   
+    cursor: pointer;
+    
+    color: #393939;
+    text-decoration: none;
+    
+    
+}
+#next-navbar>div:nth-child(2){
+    color: #f93822;
+}
+
+
+/* navbar ended */
+#dot{
+    border:0px solid red;
+    display: flex;
+    width: 95%;
+    height:60px;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 30px;
+    
+}
+#dot>div{
+    border:0px solid black;
+    width:33%;
+    font-size: 16px;
+    font-family: "Brandon Text", Arial, sans-serif;
+    text-align: center;
+    line-height: 22px;
+   
+
+}
+#dot>div>img{
+    width:100%;
+}
+#dot p{
+    color: #000000;
+   
+}
+#dot>div>p{
+    color:#393939;
+    font-weight: bold;
+
+   
+}
+#dot>div>a>p{
+    font-size: 12px;
+    
+    
+}
+#banner{
+    width:95%;
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+    text-align: center;
+}
+#banner>img{
+    width:100%;
+}
+#over{
+    position: absolute;
+  bottom: 90px;
+  right: 100px;
+  color: #FFFFFF;
+  font-size: 13px;
+}
+#deals{
+    border:0px solid red;
+    width:95%;
+    height:450px;
+    margin: auto;
+    margin-top: 30px;
+}
+#deals1{
+    display: flex;
+    justify-content: space-between;
+}
+#deals1>div:nth-child(1){
+    font-size: 25px;
+    font-weight: bold;
+    color: #393939;
+}
+#deals2{
+    border:0px solid red;
+    width:33%;
+    height:40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #393939;
+}
+#deals2>div:hover{
+    text-decoration: underline;
+cursor: pointer;
+text-decoration-thickness: 3px;
+}
+
+#deals3{
+    border:0px solid red;
+    width: 97%;
+    height:350px;
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 350px);
+    gap:20px;
+    line-height: 23px;
+    font-family: "Brandon Text", Arial, sans-serif;
+}
+#deals3>div{
+    border:0px solid blue;  
+}
+#deals3>div>img{
+    width:100%;
+    height:78%;
+}
+#deals3>div>p:nth-child(2){
+   color:#f93822;
+   font-size: 13px;
+   font-weight: 700;
+
+}
+#deals3>div>p:nth-child(4){
+    color:#f93822;
+    font-family: "Brandon Text", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+ }
+ #deals3>div>p:nth-child(3){
+    
+    font-family: "Brandon Text", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    
+ }
+ #deals3>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px ;
+ }
+#ribbon{
+    width:95%;
+    margin: auto;
+    margin-top: 25px;
+}
+#all{
+    padding: 10px;
+    background-color: white;
+    border:1px solid black
+}
+#happy{
+    border:0px solid red;
+    width:95%;
+    margin: auto;
+    height:auto;
+    margin-top: 20px;
+}
+#ribbon>img{
+width:100%;
+}
+#happy>img{
+    width:100%;
+    
+}
+#happy{
+    position: relative;
+    text-align: center;
+}
+#comment{
+    position: absolute;
+  bottom: 70px;
+  left:400px;
+  
+
+ 
+}
+#btn1{
+    position: absolute;
+    bottom: 30px;
+    left:350px;
+    padding: 6px;
+}
+#btn2{
+    position: absolute;
+    bottom: 30px;
+    left:450px;
+    padding: 6px;
+}
+#btn3{
+    position: absolute;
+    bottom: 30px;
+    right:300px;
+    padding: 6px;
+}
+#carousel{
+    border:0px solid red;
+  
+    width:95%;
+    height:300px;
+    margin: auto;
+margin-top: 30px;
+}
+#carousel>img{
+    width:100%;
+    height:300px;
+}
+#deals4{
+    border:0px solid red;
+    width:58%;
+    height:40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Brandon Text", Arial, sans-serif;
+    font-size: 13px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #393939;
+}
+#deals4>div{
+    font-family: "Brandon Text", Arial, sans-serif;
+font-size: 16px;
+}
+#deals4>div:hover{
+    text-decoration: underline;
+cursor: pointer;
+text-decoration-thickness: 3px;
+}
+
+#deals5{
+    border:0px solid red;
+    width: 97%;
+    height:350px;
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 350px);
+    gap:20px;
+    line-height: 23px;
+    font-family: "Brandon Text", Arial, sans-serif;
+}
+#deals5>div{
+    border:0px solid blue;  
+}
+#deals5>div>img{
+    width:100%;
+    height:78%;
+}
+#deals5>div>p:nth-child(2){
+   color:#f93822;
+    font-size: 13px;
+    font-weight: 700;
+   
+
+}
+#deals5>div>p:nth-child(4){
+    color:#f93822;
+    font-family: "Brandon Text", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+ }
+ #deals5>div>p:nth-child(3){
+    
+    font-family: "Brandon Text", Arial, sans-serif;
+    font-size: 13px;
+    
+ }
+ #deals5>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px ;
+ }
+ #deals5>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px ;
+ }
+
+ #carousel1{
+    border:0px solid red;
+  
+    width:95%;
+    height:300px;
+    margin: auto;
+margin-top: 20px;
+position: relative;
+    text-align: center;
+}
+#carousel1>img{
+    width:100%;
+    height:300px;
+}
+
+#some{
+    position: absolute;
+    bottom: 170px;
+    right:60px;
+    font-family: "Brandon Text", Arial, sans-serif;
+    font-weight: bold;
+    color:#333333;
+    font-size: 22px;
+
+    
+}
+#some1{
+    position: absolute;
+    bottom: 140px;
+    right:15px;
+    
+}
+#some2{
+    position: absolute;
+    bottom: 120px;
+    right:10px;
+    
+}
+#some3{
+    position: absolute;
+    bottom: 100px;
+    right:30px;
+    
+}
+
+#trending{
+    border:0px solid red;
+    width:25%;
+    height: 40px;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: "Brandon Text", Arial, sans-serif;
+    margin: auto;
+    margin-top: 38px;
+    color:#333333;
+    text-align: center;
+}
+
+#general{
+    border: 0px solid red;
+    width:80%;
+    height:100px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 26px;
+}
+#general>p:nth-child(1)
+{
+    font-family: "Brandon Text", Arial, sans-serif;
+    font-size: 18px;
+    color:#333333;
+    
+}
+#general>p:nth-child(2)
+{
+    font-family: "Brandon Text", Arial, sans-serif;
+    font-size: 14px;
+    color: grey;
+   
+}
+#general>p:nth-child(3)
+{
+    font-family: "Brandon Text", Arial, sans-serif;
+    font-size: 14px;
+    color: black;
+    text-decoration: underline;
+    
+}
+#deals6{
+    border:0px solid red;
+    width: 97%;
+    height:350px;
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 350px);
+    gap:20px;
+    line-height: 23px;
+    font-family: "Brandon Text", Arial, sans-serif;
+}
+#deals6>div{
+    border:0px solid blue;  
+}
+#deals6>div>img{
+    width:100%;
+    height:78%;
+    
+}
+#deals6>div>p:nth-child(2){
+   color:#393939;
+   font-size: 13px;
+   font-weight: 700;
+   font-family: "Brandon Text", Arial, sans-serif;
+   padding-left: 10px;
+}
+#deals6>div>p:nth-child(4){
+   
+    font-family: "Brandon Text", Arial, sans-serif;
+    font-size: 13px;
+    text-decoration: underline;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 700;
+    padding-left: 10px;
+ }
+ #deals6>div>p:nth-child(3){
+    
+    font-family: "Brandon Text", Arial, sans-serif;
+    color:#393939;
+    font-size: 13px;
+    font-weight: 700;
+    padding-left: 10px;
+    
+ }
+ #deals6>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   
+ }
+ 
+ #deals{
+    border:0px solid red;
+    width:95%;
+    height:450px;
+    margin: auto;
+    margin-top: 35px;
+}
+#deals1{
+    display: flex;
+    justify-content: space-between;
+}
+#deals1>div:nth-child(1){
+    font-size: 25px;
+    font-weight: bold;
+    color: #393939;
+}
+#dealsx{
+    border:0px solid red;
+    width:12%;
+    height:40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #393939;
+}
+#dealsx>div:hover{
+    text-decoration: underline;
+cursor: pointer;
+text-decoration-thickness: 3px;
+}
+
+#deals7{
+    border:0px solid red;
+    width: 100%;
+    height:350px;
+    margin: auto;
+    margin-top: 19px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 350px);
+    gap:20px;
+    line-height: 23px;
+    font-family: "Brandon Text", Arial, sans-serif;
+}
+#deals7>div{
+    border:0px solid blue;  
+}
+#deals7>div>img{
+    width:100%;
+    height:78%;
+    
+}
+#deals7>div>p:nth-child(2){
+   color:#4c579f;
+   font-size: 13px;
+   font-weight: 700;
+
+}
+#deals7>div>p:nth-child(4){
+    color:#393939;
+    font-family: "Brandon Text", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+ }
+ #deals7>div>p:nth-child(3){
+    
+    font-family: "Brandon Text", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    
+ }
+ #deals7>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px ;
+ }
+
+ #poster{
+    width:95%;
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+    text-align: center;
+ }
+ #poster>img{
+    width:100%;
+ }
+
+ 
+#over1{
+    position: absolute;
+  bottom: 75px;
+  left: 500px;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Brandon Text", Arial, sans-serif;
+}
+#over2{
+    position: absolute;
+  bottom: 50px;
+  left: 500px;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-family: "Brandon Text", Arial, sans-serif;
+}
+#over3{
+    position: absolute;
+  bottom: 30px;
+  left: 500px;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-family: "Brandon Text", Arial, sans-serif;
+  text-decoration: underline;
+}
+
+
+#deals8{
+    border:0px solid red;
+    width: 95%;
+    height:275px;
+    margin: auto;
+    margin-top: 19px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 275px);
+   
+    line-height: 23px;
+    font-family: "Brandon Text", Arial, sans-serif;
+    text-align: center;
+}
+#deals8>div{
+    border:0px solid blue;  
+}
+#deals8>div>img{
+    width:100%;
+    height:auto;
+    
+}
+#deals8>div>p:nth-child(2){
+   color:#393939;
+   font-size: 15px;
+   font-weight: 700;
+
+}
+
+#trending1{
+    border:0px solid red;
+    width:50%;
+    height: 40px;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: "Brandon Text", Arial, sans-serif;
+    margin: auto;
+    margin-top: 38px;
+    color:#333333;
+    text-align: center;
+    line-height: 20px;
+}
+
+#trending1>p{
+    font-size: 13px;
+    font-family: "Brandon Text", Arial, sans-serif;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+#deals9{
+    border:0px solid red;
+    width: 95%;
+    height:275px;
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 275px);
+   gap:10px;
+    line-height: 23px;
+    font-family: "Brandon Text", Arial, sans-serif;
+    text-align: center;
+}
+#deals9>div{
+    border:0px solid blue;  
+}
+#deals9>div>img{
+    width:100%;
+    height:auto;
+    
+}
+#deals9>div>p:nth-child(2){
+   color:#393939;
+   font-size: 15px;
+   font-weight: 700;
+
+}
+
+#email{
+    border:0px solid red;
+    margin-top: 40px;
+    display: flex;
+    height:40px;
+  
+
+    justify-content: end;
+    align-items: center;
+    gap:10px;
+}
+#email>div:nth-child(1){
+        border:0px solid red;
+        width:6%;
+        height: 100%;
+        color: #393939;
+        font-size: 12px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+#email>div:nth-child(2){
+    border:1px solid gray;
+    width:16%;
+    height: 100%;
+    display: flex;
+    
+    align-items: center;
+    color: gray;
+    justify-content:center;
+    font-weight: 400;
+}
+#email>div:nth-child(3){
+    border:1px solid #000000;
+    width:14%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    background-color: #000000;
+    color: white;
+    font-weight: 400;
+}
+
+/* footer start */
+#footer{
+    border:0px solid red;
+    width:100%;
+    height:auto;
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    padding-left: 15px;
+    padding-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 10px;
+    padding-left: 15px;
+}
+#footer1{
+    border:0px solid red;
+    width:70%;
+    height:80%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 430px);
+    gap:10px;
+    height:390px;
+}
+#footer1>div{
+border: 0px solid blue;
+line-height: 35px;
+font-family: "Brandon Text", Arial, sans-serif;
+font-size: 16px;
+color: #393939;
+height: 390px;
+}
+
+#footer1>div>ul:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    text-decoration-thickness: 1px;
+}
+
+#footer1>div>ul:nth-child(1){
+    font-weight: 700;
+
+}
+#footer2{
+    border:0px solid red;
+    height:130px;
+    width:20%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2, 60px);
+}
+
+#design{
+    border:0px solid blue;
+    display: flex;
+    width:98%;
+    justify-content: space-between;
+
+}
+
+#footer2>div{
+    border: 0px solid green;
+    
+}
+
+#footer2>div>img{
+width: 100%;
+margin-top: 10px;
+border:0px solid red;
+}
+#footer2>div:nth-child(2){
+    display: flex;
+    gap:15px;
+    padding-left: 30px;
+}
+#last{
+    border:0px solid black;
+    height:12%;
+    width:68%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1, auto); */
+    font-size: 13px;
+    font-family: "Brandon Text", Arial, sans-serif; 
+    font-weight: 400;
+    color: #393939;
+    margin-bottom: 10px;
+    margin-top: 10px;
+   
+}
+#last>div:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    text-decoration-thickness: 1px;
+}
+
+/* footer end */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+ 
+    line-height: 20px;
+    padding: 15px;
+    padding-right: 25px;
+    font-family: "Brandon Text", Arial, sans-serif; 
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 220px;
+    height:400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    cursor: pointer;
+  }
+  .dropdown-content div {
+  
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content ul {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content ul:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+#account{
+    border:0px solid red;
+    height: 40px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    background-color: #000000;
+    font-family: "Brandon Text", Arial, sans-serif;
+    padding: 5px; 
+    cursor: pointer;
+
+}
+
+.dropdown-content1 {
+ 
+    line-height: 20px;
+    padding: 15px;
+    padding-right: 25px;
+    font-family: "Brandon Text", Arial, sans-serif; 
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 150px;
+    height:220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    cursor: pointer;
+  }
+  .dropdown-content1 div {
+  
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content1 ul {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content1 ul:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content1 {
+  display: block;
+}
+
+
+#account1{
+    border:0px solid red;
+    height: 40px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    background-color: #000000;
+    font-family: "Brandon Text", Arial, sans-serif;
+    padding: 5px; 
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+

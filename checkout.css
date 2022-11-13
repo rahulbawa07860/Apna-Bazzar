@@ -361,6 +361,15 @@ cursor: pointer;
 #text_p{
     font-size: 17px;
 }
+#total_span{
+    color: #3e8e41;
+}
+#delivery_head{
+    padding-top: 10px;
+}
+#delivery_div{
+    padding-top: 10px;
+}
 
 
 

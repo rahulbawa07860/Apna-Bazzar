@@ -69,6 +69,8 @@ data=[{
 //console.log(data)
 
 const appendProduct = () => {
+    let loader_div=document.getElementById("loader_div")
+    loader_div.style.display='none'
     let append_div=document.getElementById('append_div');
     append_div.innerHTML=null;
     data.forEach(function(el,i){
@@ -112,11 +114,47 @@ const appendProduct = () => {
 
     });
 }
-appendProduct()
 
+
+
+
+
+let getmeData=new Promise(function(resolve,reject){
+
+    setTimeout(function(){
+        let newData=data;
+        if(newData!=null){
+             resolve(newData)
+         }else{
+            reject('ERR:Servor could not get movies data') 
+         }
+     },3000);
+    });
+    getmeData.then(function(success){
+       
+        appendProduct(success)
+    })
+    .catch(function(error){
+         console.log('error:', error)
+     });
+
+
+
+
+
+
+
+
+
+
+     
 const  buyProduct= () => {
-window.location.href="bag.html"
-    
+   
+    // let data=JSON.parse(localStorage.getItem('Toptal_price'))||[];
+price_tag= document.getElementById('price_tag').innerText;
+// data.push(price_tag)
+localStorage.setItem('Toptal_price',JSON.stringify(price_tag));
+window.location.href="bag2.html"
 }
 let brand_btn=document.getElementById('brand-heading');
 brand_btn.onclick=()=>{
@@ -240,7 +278,10 @@ admnbtn.onclick=()=>{
     window.location.href="adminlogin.html"
 }
 
-let cartbtn=document.getElementById('cart_div')
+let cartbtn=document.getElementById('d_button_cart')
 cartbtn.onclick=()=>{
-    window.location.href="checkout.html"
+   
+    
+    window.location.href="bag2.html.html"
+
 }

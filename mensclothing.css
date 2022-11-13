@@ -817,10 +817,22 @@ border:0px solid red;
 #dsetAtrr{
     margin-top: -15px;
 }
-@media  all and (min-width: 1024px){
-    
+#loader_div{
+    margin-left: 500px;
+    margin-top: 200px;
 }
+/* @media  all and (min-width: 1024px){
+    
+} */
 @media all and (min-width:768px) and(max-width:1024px){
+    #append_div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(auto,1fr);
+        row-gap: 20px;
+        column-gap: 20px;
+        padding-left: 30px;
+    }
 
 }
 @media all and (min-width:320px) and(max-width:767px){

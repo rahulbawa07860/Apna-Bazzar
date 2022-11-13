@@ -307,10 +307,11 @@ cursor: pointer;
 #rigth_total_tag{
     height: 15%;
     border: 0px solid blue;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 #bag_product_info{
     height:65%;
-    border: 0px solid ;
+    border: 0px solid red ;
 }
 #delivery_div{
     border: 0px solid;
@@ -362,6 +363,20 @@ cursor: pointer;
     font-size: 17px;
 }
 
+#bag_product_info{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto, 100px);
+    height:auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    gap: 15px;
+}
 
+
+
+#bag_product_info>div{
+border: 0px solid red;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
 

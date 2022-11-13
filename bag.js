@@ -100,7 +100,8 @@ document.getElementById("bag_count").innerText = total_count;
 
 // window.location.reload();
 
-window.location.href="./cart.html";
+// window.location.href="./cart.html";
+window.location.href="./checkout.html";
 
 }
 

@@ -22,7 +22,7 @@ let send_this_data={
     
 
 }
-let res=await fetch(`http://localhost:3000/posts`, {
+let res=await fetch(`https://stark-tundra-16682.herokuapp.com/posts`, {
     method: 'POST',
     body: JSON.stringify(send_this_data),
     headers: {
@@ -44,7 +44,7 @@ dele_btn.onclick=()=>{
 const deletePost =async () =>{
     let delete_id=document.getElementById("delete_id").value
 
-    let res = await fetch(`http://localhost:3000/posts/${delete_id}`,{
+    let res = await fetch(`https://stark-tundra-16682.herokuapp.com/posts/${delete_id}`,{
 
         method:"DELETE",
 
@@ -70,7 +70,7 @@ const updatePost = async() => {
         
         price:new_price
     }
-    let res = await fetch(`http://localhost:3000/posts/${update_id}`,{
+    let res = await fetch(`https://stark-tundra-16682.herokuapp.com/posts/${update_id}`,{
 
         method:"PATCH",
         body:JSON.stringify(send_this_data),

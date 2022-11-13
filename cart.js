@@ -5,7 +5,6 @@
 
 
 
-
     let data = JSON.parse(localStorage.getItem("bag")) ;
     console.log(data);
 

@@ -69,6 +69,8 @@ data=[{
 //console.log(data)
 
 const appendProduct = () => {
+    let loader_div=document.getElementById("loader_div")
+    loader_div.style.display='none'
     let append_div=document.getElementById('append_div');
     append_div.innerHTML=null;
     data.forEach(function(el,i){
@@ -97,27 +99,64 @@ const appendProduct = () => {
         let btn=document.createElement("button")
         btn.innerText="Quick View"
         btn.setAttribute('id','button_cart');
-        btn.onclick=()=>{
-            buyProduct()
-        }
-        
-
-
-
-       
+        btn.addEventListener('click',function(){
+        buyProduct(el);
+        });
         div.append(img,brand,about,price,strike_price,off_price,rating,ratingNumber,btn);
         append_div.append(div)
+        console.log(el)
 
 
 
     });
-}
-appendProduct()
+};
 
-const  buyProduct= () => {
-window.location.href="bag.html"
+
+
+
+
+let getmeData=new Promise(function(resolve,reject){
+
+    setTimeout(function(){
+        let newData=data;
+        if(newData!=null){
+             resolve(newData)
+         }else{
+            reject('ERR:Servor could not get movies data') 
+         }
+     },3000);
+    });
+    getmeData.then(function(success){
+       
+        appendProduct(success)
+    })
+    .catch(function(error){
+         console.log('error:', error)
+     });
+
+
+
+
+
+
+
     
+
+     
+     
+const  buyProduct= (el) => {
+
+    //console.log(el.INR);
+   let data=JSON.parse(localStorage.getItem('Total_price'))||[];
+//    let data1=JSON.parse(localStorage.getItem('Total_price'))||[];
+// price_tag= document.getElementById('price_tag')
+//console.log('price_tag :>> ', price_tag);
+ data.push(el.INR)
+localStorage.setItem('Total_price',JSON.stringify(data));
+window.location.href="bag.html"
 }
+
+
 let brand_btn=document.getElementById('brand-heading');
 brand_btn.onclick=()=>{
     sortHtoL()
@@ -171,7 +210,7 @@ price_btn.onclick=()=>{
 
 const dynamic=async()=>{
 
-    let res= await fetch(`http://localhost:3000/posts`)
+    let res= await fetch(`https://stark-tundra-16682.herokuapp.com/posts`)
 
     let data=await res.json()
     append(data)
@@ -238,9 +277,4 @@ homebtnlogo.onclick=()=>{
 let admnbtn=document.getElementById('account1_div');
 admnbtn.onclick=()=>{
     window.location.href="adminlogin.html"
-}
-
-let cartbtn=document.getElementById('cart_div')
-cartbtn.onclick=()=>{
-    window.location.href="checkout.html"
 }

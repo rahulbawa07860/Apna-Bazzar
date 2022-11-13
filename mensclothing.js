@@ -278,3 +278,6 @@ let admnbtn=document.getElementById('account1_div');
 admnbtn.onclick=()=>{
     window.location.href="adminlogin.html"
 }
+
+
+

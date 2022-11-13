@@ -76,7 +76,10 @@
                 <p> <span><i class="fa-solid fa-store"></i></span>Store</p>
             </div>
             <div id="cart_div">
+
                 <p> <i class="fa-solid fa-cart-shopping"></i>(<span id="bag_count">0</span>)</p>
+
+
             </div>
         </div>
         <hr>
@@ -127,15 +130,15 @@
                         <input type="text" id="user_address1" placeholder="Adress Line 1">
                         <input type="text" id="user_address2" placeholder="Adress Line 2">
                         <input type="text" id="user_city" placeholder="City">
-                        <input type="number" id="user_name" placeholder="Phone">
+                        <input type="number" id="user_number" placeholder="Phone">
                     </form>
                     </div>
                 </div>
                 <div id="delivery_methode">
                     Delivery Mode:
-                    <select name="Delivery Mode" id="">
-                        <option value="1">Standard</option>
-                        <option value="">EXpress</option>
+                    <select name="Delivery Mode" id="mode_a">
+                        <option value="Standard" >Standard</option>
+                        <option value="Express" >Express</option>
                     </select>
                 </div>
                 <a href="payment.html"><button id="btn_check">Checkout>></button></a>
@@ -149,7 +152,11 @@
                     
                 </div>
                 <div id="rigth_total_tag">
+
                     <h3 id="total_h" style="color: green; text-align:center;padding: 30px;" >Total :- <span id="total_span"></span></h3>
+
+                    <h3 id="total_h">Total <span id="total_span">0</span></h3>
+
                 </div>
                 <div id="bag_product_info">
 

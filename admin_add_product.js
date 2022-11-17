@@ -86,3 +86,11 @@ const updatePost = async() => {
     console.log(data)
     window.location.href="mensclothing.html"
 }
+let next=document.getElementById("next")
+next.onclick=()=>{
+    window.location.href="women.html";
+}
+let next1=document.getElementById("next1")
+next1.onclick=()=>{
+    window.location.href="mensclothing.html";
+}

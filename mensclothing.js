@@ -271,7 +271,7 @@ womenbtn.onclick=()=>{
 };
 let homebtnlogo=document.getElementById('logo_img');
 homebtnlogo.onclick=()=>{
-    window.location.href="landing.html"
+    window.location.href="index.html"
 }
 
 let admnbtn=document.getElementById('account1_div');

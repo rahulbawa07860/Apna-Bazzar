@@ -389,3 +389,40 @@ border:0px solid red;
 #nd_con{
     margin-top: 50px;
 }
+#add_product{
+    width:80%;
+    height:30px;
+    background-color: #f93822;
+    border:none;
+    color:white
+}
+.container{
+    padding:20px;
+    margin-left: 200px;
+}
+#delete_btn{
+    width:80%;
+    height:30px;
+    background-color: #f93822;
+    border:none;
+    color:white  
+}
+.next_container{
+    padding:20px;
+}
+#update_btn{
+    width:80%;
+    height:30px;
+    background-color: #f93822;
+    border:none;
+    color:white 
+}
+#main_con{
+    border:0px solid red;
+
+}
+#mini-cont{
+    border:0px solid red;
+    width:30%;
+    margin-right: 200px;
+}

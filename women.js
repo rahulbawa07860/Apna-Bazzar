@@ -1,3 +1,17 @@
+let next=document.getElementById("next")
+    next.onclick=()=>{
+        window.location.href="women.html";
+    }
+    let next1=document.getElementById("next1")
+    next1.onclick=()=>{
+        window.location.href="mensclothing.html";
+    }
+    
+
+    let logo=document.getElementById("logo");
+    logo.onclick=()=>{
+        window.location.href="index.html";
+    }
 data=[{
     image:"https://n.nordstrommedia.com/id/sr3/d539b784-cc6f-4bc2-8ee6-d2733c89d906.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2://n.nordstrommedia.com/id/sr3/d7e22c74-3cf7-4f36-9482-ab2ffe5349f4.jpeg?h=365&w=240&dpr=2",
     name:"Zella",

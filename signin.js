@@ -116,10 +116,23 @@ const getprofile = async (username,token) => {
 
     let data = await response.json();
     alert(`welcome ${data.username}`)
-    window.location.href="./landing.html"
+    window.location.href="./index.html"
     }
     catch(e){
         console.log(e)
         alert(`wrong username`)
     }
 }
+let next=document.getElementById("next")
+    next.onclick=()=>{
+        window.location.href="women.html";
+    }
+    let next1=document.getElementById("next1")
+    next1.onclick=()=>{
+        window.location.href="mensclothing.html";
+    }
+
+    let logo=document.getElementById("logo");
+    logo.onclick=()=>{
+        window.location.href="index.html";
+    }
